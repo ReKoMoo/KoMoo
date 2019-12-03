@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">무대쳅터</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">무대이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">뮤지컬 영상</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">작품설명</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('http://www.newstage.co.kr/news/photo/201811/30372_9321_165.jpg')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mu\mu7.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">지킬앤하이드</h1>
+            <span class="review_in_h1">Jekyll & hyde</span>
+            <p><span>2019</span>  
+               <span>한국</span>  
+               <a class="review_in_ni">8세이상 관람</a>
+            </p>
+            <p><span>뮤지컬</span><span>상영시간 : 160분</span></p>
+            <p>기간 : 2019.09.03 ~ 2019.09.15</p>
+            <p>장소 : 샤롯데씨어터</p>
+            <p>주연배우 :  민우혁(지킬/하이드) 윤공주(루시)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>관람평점<span class="score">9.60</span></li>
+            <li>네티즌<span class="score">9.16</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption style="font-size: 28px; text-align: center;" >〈지킬앤하이드〉 대표 출연배우</caption>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/13/10/0400041310_33371_02058.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3695_012605.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/11/01/0400041101_24577_02856.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3873_01.jpg"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4126_01.jpg" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/08/05/0400040805_8589_02.915.gif"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>민우혁</td>
+            <td>윤공주</td>
+            <td>이정화</td>
+            <td>김봉환</td>
+            <td>이희정</td>
+            <td>강상범</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>지킬/하이드 역</th>
+            <th>루시 역</th>
+            <th>엠마 역</th>
+            <th>댄버스 역</th>
+            <th>어터슨 역</th>
+            <th>새비지/풀 역</th>
+        </tfoot>
+    </table>
+</div>
+
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈지킬앤하이드〉 작품설명</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">작품설명 1</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">작품설명 2</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">작품설명 3</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">작품설명 4</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"  style="width: 700px;"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri">
+            <p>지금 이 순간 (This is the Moment),</p>
+            <p> (Someone Like You), (Once Upon a Dream)</p>
+        <p class="p">등 작품과 앙상블을 이루는 강렬하고 아름다운 넘버로 관객을 사로잡는다</p>
+        <a>
+            배우들의 완벽한 연기와 어우러지는 주옥같은 넘버
+            다시 시작되는 신화
+            2004년 국내 초연 이후 15년의 신화
+            7번의 정규 프로덕션, 대한민국 20개 도시 공연
+            매 시즌 매진 행렬! 전 회차 전석 기립!
+            대한민국 독보적인 NO.1 뮤지컬<br> <지킬앤하이드>
+        </a>
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+                <p class="p">최고의 프로덕션을 선보이다!</p>
+            <a>
+                    2층 구조를 기본으로 한 다이아몬드형 무대
+                    빅토리아 시대를 완벽하게 고증한 의상까지
+                    지금까지의 제작 노하우가 집결된 최고의 프로덕션!
+                    전설의 역사를 완성하다!
+                    2018-2019 시즌 7개월간, 평균 객석 점유율 98%
+                    30만 관객 동원! 총 누적 관객 수 140만 돌파!
+                    단 2주간의 기회!
+                    열화와 같은 성원으로 2주간의 서울 앵콜 공연 확정!
+                    뮤지컬 <지킬앤하이드>의 새로운 역사를 쓰고 있는 흥행의 주역
+                    민우혁, 전동석, 윤공주, 아이비, 해나, 이정화, 민경아
+                    최고를 입증한 그들이 보여주는 단 2주간의 전율의 무대!
+            </a>
+        </div>  
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+            <p class="p">줄거리</p>
+            <a>
+                1888년 런던, 헨리 ‘지킬’은 유능한 의사이자 과학자이며 사랑하는 연인 엠마와의 결혼을 앞두고 있다.
+                부족한 것 없어 보이는 그에게 단 하나의 걱정은 정신질환을 앓고 있는 아버지.
+                지킬은 자신의 아버지를 비롯해 정신질환으로 고통받는 환자들을 위해
+                사람의 정신에서 선과 악을 분리할 수 있는 치료제 연구를 시작한다. 
+                사람을 대상으로 하는 임상 실험 단계에 이르렀지만 이사회의 반대로 실험은 무산되고
+                지킬의 친구이자 변호사인 어터슨은 낙담에 빠진 그를 위로하며 웨스트엔드의 한 클럽으로 이끈다.
+                술에 취한 사람들 사이에서 학대받는 루시를 발견한 지킬, 친구가 필요하면 찾아오라며 자신의 명함을 건넨다.
+                루시는 지금까지 자신이 만나 온 사람들과 달리 자신을 인간적으로 대해준 지킬에게 호감을 느낀다.
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4" style="width: 700px;"> 
+    <div id="note_container" class="note_container" >
+        <div class="note_ri">
+        <p class="p">줄거리</p>
+        <a>
+            클럽에서 돌아온 지킬은 이 연구가 자기 자신만이 해결할 수 있는 과제임을 깨닫고
+            스스로가 실험 대상이 되기로 결정한다. 그의 바람대로 선과 악을 분리시키는데 성공하지만
+            시간이 지날수록 악으로 가득 찬 제2의 인물 에드워드 ‘하이드’가 지킬을 장악하며 통제 불가능한 수준에 이른다.
+            실험이 진행될수록 지킬은 엠마와 점점 더 멀어지고, 그러던 어느 날 상처받은 루시가 그를 찾아온다.
+            그녀를 상처 입게 만든 사람이 하이드란 것을 알게 된 지킬은 불안에 휩싸인다.
+            한편 하이드는 지킬의 실험을 반대했던 이사회 임원들을 한 명씩 살해하기 시작하고,
+            위험을 감지한 지킬은 다시금 치료제 주입을 통해 하이드를 잠재우는데 성공하지만
+            예상치 못한 순간 다시금 하이드가 등장하게 되는데...
+        </a>        
+        </div>
+    </div> 
+</div>
+
+<!-------제작노트 끝------->
+</div>
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈지킬앤하이드〉 무대스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="http://www.newstage.co.kr/news/photo/201811/30372_9321_165.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://www.newstage.co.kr/news/photo/201811/30372_9323_1739.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://www.newstage.co.kr/news/photo/201811/30372_9322_174.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://static.hubzum.zumst.com/hubzum/2018/12/27/14/9a06759ffbbc4b68871c427d4668d1d2.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://static.hubzum.zumst.com/hubzum/2018/12/27/14/60a0fdf04aa049a4bae4d5a00089807b.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈지킬앤하이드〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+    
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oWGKqxPSdB0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uATNNO5e53Y" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ps-JbxR1Ifk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+<section class="separator">
+        <a>〈지킬앤하이드〉 작품설명 </a>
+    </section>
+<div id="review_bottom" style="display: table; vertical-align: middle;text-align: center; margin: 0 auto;">
+    <img src="http://ticketimage.interpark.com/Play/image/etc/19/19010245-01.jpg">
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>

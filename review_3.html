@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">무대쳅터</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">무대이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">뮤지컬 영상</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">작품설명</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('http://www.stardailynews.co.kr/news/photo/201906/246840_280719_5236.jpg')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mu\mu3.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">메피스토</h1>
+            <span class="review_in_h1">Mephisto</span>
+            <p><span>2019</span>  
+               <span>한국</span>  
+               <a class="review_in_ni">7세이상 관람</a>
+            </p>
+            <p><span>뮤지컬</span><span>상영시간 : 160분</span></p>
+            <p>기간 : 2019.05.25 ~ 2019.07.28</p>
+            <p>장소 : 광림아트센터 BBCH홀</p>
+            <p>주연배우 :  강기헌(솔롱고) 김미미(서나영)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>관람평점<span class="score">9.00</span></li>
+            <li>네티즌<span class="score">8.69</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption style="font-size: 28px; text-align: center;" >〈메피스토〉 대표 출연배우</caption>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/11/12/0400041112_27537_02540.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_2_012.jp907.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/11/02/0400041102_24814_02.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_373_01.jpg"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3661_011.jpg" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/09/12/0400040912_19102_02221.gif"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>남우현</td>
+            <td>신성우</td>
+            <td>선우</td>
+            <td>최성원</td>
+            <td>백주연</td>
+            <td>백시호</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>메피스토 역</th>
+            <th>파우스트 역</th>
+            <th>마르게타 역</th>
+            <th>보세티 역</th>
+            <th>켈리 역</th>
+            <th>패터슨 역</th>
+        </tfoot>
+        <thead id="main_Actior">
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/15/05/0400041505_37172_02.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3998_012420.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/13/05/0400041305_32229_02400.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3638_012639.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/13/05/0400041305_32195_02.gif" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/19/05/0400041905_44844_02.gif"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>켄</td>
+            <td>김법래</td>
+            <td>린지</td>
+            <td>정상윤</td>
+            <td>황한나</td>
+            <td>김효성</td>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈메피스토〉 Chapter</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">작품설명</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">작품설명 2</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">작품설명 3</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">줄거리</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"  style="width: 700px;"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri">
+            <p>작품설명 3</p>
+            <p>신선하게 풀어 낸 ‘파우스트’의 재해석!</p>
+        <p class="p">누구나 한번씩은 꿈꾸는 욕망을 새롭게 뮤지컬로 풀어내다.</p>
+        <a>
+            2018년 DIMF 공식초청 개막작 체코 뮤지컬 <메피스토>가 올 봄 한국에서 라이선스 초연한다.
+            <메피스토>는 독일 문학의 거장 괴테가 평생을 바쳐 완성했다고 알려진 소설 「파우스트」를 원작으로 하고 있다. 이미 체코에서 한 번 각색되어 호평을 받았던 본 작품을, 한국 대중의 정서에 맞게 2차 각색해 완성도를 높였다.
+            인간이면 누구나 한번씩 꿈꾸는 욕망을 다소 무겁고 정적으로 표현했던 원작 대신 배우들의 격렬한 에너지와 감성의 목소리에 웅장한 무대와 화려한 의상을 더 해 압도적인 볼거리로 흥미를 선사할 예정이다.
+                  
+        </a>
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+                <p class="p">작품설명 2</p>
+            <a>
+                누구도 따라올 수 없는 지식과 명예를 가졌지만 얼마 남지 않은 자신의 생명을 탄식하는 파우스트. 그런 그의 앞에 어느 날 악마 메피스토가 찾아와 거래를 제안한다. 자신이 평생을 받쳐 이룩한 모든 학문이 세상을 추악하게 만드는데 쓰여지는 것을 막기 위해 그리고 어느새 마음 속에 자리 잡은 한 여인을 지키기 위해 파우스트는 결국 자신의 영혼을 대가로 젊음을 쟁취하지만, 자신도 몰랐던 저 깊숙한 곳에 숨겨져 있는 욕망과 메피스토의 계략으로 인해 깊은 함정에 빠지고 마는데...       
+            </a> 
+        </div>  
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+            <p class="p">작품설명 3</p>
+            <a>
+                이미 <아이언마스크>,<포우>,<서울의 달>에서 숙련된 호흡을 보여 주었던 노우성 연출과 김성수 음악감독. <포우>,<여명의 눈동자>에서 아름다운 가사와 드라마틱한 구성으로 주목 받고 있는 지인우 작가를 필두로 대한민국 화제의 작품에 참여해 온 정상급 스텝들의 협업을 보여 줄 예정이다.
+                더욱이 <잭더리퍼>, <아이언마스크> 등 다수의 작품을 통해 흥행을 입증한 메이커스프로덕션이 기획과 제작을 맡아 더욱 기대를 모은다.
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4" style="width: 700px;"> 
+    <div id="note_container" class="note_container" >
+        <div class="note_ri">
+            <p>줄거리</p>
+        <p class="p">경제 대공황이 북아메리카와 유럽을 휩쓸고 있었던 1931년 뉴욕</p>
+        <a>
+            
+                엠파이어스테이트 빌딩 옥상.
+                마치 그 옛날 바벨탑에서처럼 신에게 도전이라도 하듯 높게 솟은 수 많은 빌딩들을 아래로 내려다 보며 메피스토가 신에게 말한다.
+                ＂여전히 보기 좋으십니까＂
+                세상의 모든 지식을 섭렵하고 세상 사람들에게 존경을 한 몸에 받고 있는 파우스트 박사.
+                그는 학자로서 모든 걸 이루었지만 그의 몸은 병이 들어 버렸고, 마음속 가득 자신을 괴롭히는 공허함으로 하루하루를 살아간다.
+                신을 향해 끊임 없이 도전하는 메피스토는 파우스트 박사를 두고 신과 내기를 하고.
+                결국 신의 허락을 받아내 그에게 접근한다.
+                ‘생명’ 이라는 거부할 수 없는 유혹 앞에 결국 악마와의 거래를 택하는 파우스트
+                파우스트와 메피스토는 서로 몸이 바뀌게 되고 병든 파우스트는 젊디 젊은 메피스토의 몸으로 새로운 삶을 시작한다.
+                세상의 모든 지식을 섭렵하고 수많은 사람들의 존경을 받는 인간이었던 파우스트.
+                하지만 자연의 순리를 거스를 수 있다는 거대한 유혹 앞에 결국 그가 어떠한 선택을 하게 될 것인지….. 그리고 그 선택의 결과는 또 무엇일지…
+        </a>        
+        </div>
+    </div> 
+</div>
+
+<!-------제작노트 끝------->
+</div>
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈메피스토〉 무대스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="http://images.sportskhan.net/article/2019/06/27/l_2019062702001233300254561.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://images.sportskhan.net/article/2019/06/27/l_2019062702001233300254562.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://images.sportskhan.net/article/2019/06/27/l_2019062702001233300254563.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://www.stardailynews.co.kr/news/photo/201906/246841_280720_5452.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2019/06/27/EFd593hX4eS8636972580187360200.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈메피스토〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+    
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DzpUKyEP9kQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bk_thO4Qm7g" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hvaC5r5vaT8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+<section class="separator">
+        <a>〈메피스토〉 작품설명 </a>
+    </section>
+<div id="review_bottom" style="display: table; vertical-align: middle;text-align: center; margin: 0 auto;">
+    <img src="http://ticketimage.interpark.com/Play/image/etc/19/19006518-16.jpg">
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>

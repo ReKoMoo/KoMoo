@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/login.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="./img/mainicon.png">
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+
+
+<!-- 로그인 탭 시작 -->
+<div class="logintab">
+<section class="login">
+        <img src="img/logo.png"><h2></h2>
+    <ul>
+        <li><input type="text" placeholder="아이디" title="아이디입력"></li>
+        <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
+        <li><input type="checkbox" id="chk_id"><label for="chk_id">아이디저장</label></li>
+        <li><button>로그인</button></li>
+    </ul>   
+    <div>
+        <ul>
+        <li><a href="" class="login1">회원가입</a></li>
+        <li><a href="" class="login2">아이디 찾기</a></li>
+        <li><a href="" class="login3">비밀번호 찾기</a></li>
+        </ul>
+    </div>
+</section>
+</div>
+
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+</body>
+</html>

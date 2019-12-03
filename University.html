@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/login.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="./img/mainicon.png">
+<link rel="stylesheet" href="css/cube.css">
+<link rel="stylesheet" href="./css/Univer.css">
+
+<script src="./js/Univer.js"></script>
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1" style="height:90px">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper"  style="top:-16px">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item" >
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden" style="height:90px">
+                    <a href="index.html">KoMoo <br>review
+                    <p><img src="img/Search.png" alt="logo" style="width: 100; height:20px" ></p></a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+</header>
+<!--****************** body 시작 *******************-->
+
+
+<body>
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+
+<div class="bn"><img src="img/subn.png" height="80px"></div>
+<div>
+<a class="separator2"><img src="img/center4.png" alt="logo" style="position: relative;"></a>
+</div>
+<br>
+<!--************************** 큐브박스 시작 ***********************-->
+<div class="wrapper">
+	<div class="perspective">
+		<input type="radio" name="switch" id="rotate" >
+		<label for="rotate">회전</label>
+
+		<input type="radio" name="switch" id="left" checked>
+		<label for="left">대학로 A구역</label>
+
+		<input type="radio" name="switch" id="back" >
+		<label for="back">대학로 B구역</label>
+
+		<input type="radio" name="switch" id="front" >
+		<label for="front">대학로 C구역</label>
+		
+		<input type="radio" name="switch" id="right">
+		<label for="right">대학로 D구역</label>
+
+		<div class="cube">
+			<div class="left">
+				<img src="img/SectionA.jpg">
+			</div>
+
+			<div class="back">
+				<img src="img/SectionB.jpg">
+			</div>
+
+			<div class="front">
+				<img src="img/SectionC.jpg">
+			</div>
+
+			<div class="right">
+				<img src="img/SectionD.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<div>
+<a class="separator1"><img src="img/center3.png" alt="logo" style="position: relative;"></a>
+</div>
+
+<!--*******************  중앙 배너 *******************-->
+<div class="sC">
+    <script type="text/javascript">
+        var interval_banner;
+        // 상단탭 배너 이미지 롤링    ['왼쪽 큰이미지','링크주소'] 
+        var TopBanners = [
+            ['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1909/190925023847_19014353.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19014353', '빅 피쉬']	
+            ,['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1910/191016022425_19015262.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19015262', '영웅본색']	
+            ,['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1908/190806015523_19011716.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19011716', '스위니토드']	
+            ,['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1910/191008042818_19014812.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19014812', '그리스']	
+            ,['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1910/191016034014_19015390.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19015390', '여신님이 보고 계셔']	
+            ,['http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1911/191111102009_19016524.gif', 'http://ticket.interpark.com/Ticket/Goods/TPBridge.asp?GoodsCode=19016524', '위대한 개츠비']	
+        ];
+
+        var TopBannerAction = {
+            BannerRollTime : 3000,
+            BannerSelect : -1,
+            NextBanner : 0,
+            
+            Init:function()
+            {
+                var nRandom;		
+                nRandom = Math.floor(Math.random() * TopBanners.length);
+                    
+                TopBannerAction.Change(nRandom);
+                TopBannerAction.RollStart();
+            },
+
+            Change: function (no)
+            {		
+                if(TopBannerAction.BannerSelect != no && TopBanners.length > 0)
+                {
+                    document.getElementById("TopBannerSel").src = TopBanners[no][0];
+                    document.getElementById("TopBannerSel").alt = TopBanners[no][2] + " 상품페이지 본창이동";
+                    
+                                        
+                    for(i=0;i<TopBanners.length;i++)
+                    {
+                        document.getElementById("banner" + i).className = "";
+                    }
+                    document.getElementById("banner" + no).className = "on";
+
+                    TopBannerAction.BannerSelect = no;
+                }
+            }, 
+    
+            Click: function(no)
+            {
+                if(no == -1)  no=TopBannerAction.BannerSelect;
+                document.location.href =  TopBanners[no][1];
+            }, 
+    
+            Next: function()
+            {							
+                TopBannerAction.NextBanner = TopBannerAction.BannerSelect + 1;
+                if (TopBannerAction.NextBanner >= TopBanners.length) TopBannerAction.NextBanner = 0;
+                TopBannerAction.Change(TopBannerAction.NextBanner);						
+            },
+            
+            RollStart: function()
+            {
+                interval_banner = window.setInterval("TopBannerAction.Next();", TopBannerAction.BannerRollTime);
+            },
+
+            RollStop: function()
+            {
+                clearInterval(interval_banner);
+            }
+        }
+    </script>
+    <div class="sC_big">
+        <div class="bn_big"><img id="TopBannerSel" src="http://ticketimage.interpark.com/TCMS3.0/MU/BANNER_1/1910/191016022425_19015262.gif" style="cursor:pointer" onclick="javascript:TopBannerAction.Click(-1);return false;" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/small/noimg.gif&quot;" alt="영웅본색 상품페이지 본창이동"></div>
+        <ul>
+            <li id="banner0" class=""><a href="#" onclick="javascript:TopBannerAction.Click(0);return false;" onmouseover="javascript:TopBannerAction.Change(0);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>빅 피쉬</span></a></li>
+            <li id="banner1" class="on"><a href="#" onclick="javascript:TopBannerAction.Click(1);return false;" onmouseover="javascript:TopBannerAction.Change(1);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>영웅본색</span></a></li>
+            <li id="banner2" class=""><a href="#" onclick="javascript:TopBannerAction.Click(2);return false;" onmouseover="javascript:TopBannerAction.Change(2);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>스위니토드</span></a></li>
+            <li id="banner3" class=""><a href="#" onclick="javascript:TopBannerAction.Click(3);return false;" onmouseover="javascript:TopBannerAction.Change(3);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>그리스</span></a></li>
+            <li id="banner4" class=""><a href="#" onclick="javascript:TopBannerAction.Click(4);return false;" onmouseover="javascript:TopBannerAction.Change(4);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>여신님이 보고 계셔</span></a></li>
+            <li id="banner5" class=""><a href="#" onclick="javascript:TopBannerAction.Click(5);return false;" onmouseover="javascript:TopBannerAction.Change(5);TopBannerAction.RollStop();return false;" onmouseout="javascript:TopBannerAction.RollStart();return false;">
+            <span>위대한 개츠비</span></a></li>
+        </ul>
+    </div>
+</div>
+<!--******************* 중앙 배너 *******************-->
+  
+
+
+
+
+
+<!--******************* 베너 라인 *******************-->
+<div id="layers">
+    <img src="img/popupzdbn.png" alt=" 팝업" height="600px">
+    <a href="#" class="close" >Close</a>
+</div>
+<div class="layers"><a href="#"><img src="img/popupzd.png" alt="팝업" style="border-radius:10px; width:260px"></a>
+</div>
+<!--******************* 베너 라인 *******************-->
+
+
+
+
+
+
+
+<!--******************* 대학로 공연 소개 *******************-->
+<tr class="Un_table">
+	<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tbody>
+		<td  align="center" height="35" style="padding:0 0 0 11px">진행중인 총 <b><font color="333333">37개</font></b>의 대학로공연이 있습니다.</td>
+	  </tr>
+	  <tr>
+		<td>
+			<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tbody><tr valign="top">
+	  	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015390"><img src="http://ticketimage.interpark.com/Play/image/large/19/19015390_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015390">뮤지컬 〈여신님이 보고 계셔〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 유니플렉스 1관<br>2019.11.16~2020.03.01</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015390"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013468"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013468_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013468">뮤지컬 〈그림자를 판 사나이〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">홍익대 대학로 아트센터 대극장<br>2019.11.16~2020.02.02</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013468"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014966"><img src="http://ticketimage.interpark.com/Play/image/large/19/19014966_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014966">〈옹알스〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 아트원씨어터 1관<br>2019.11.21~2020.02.16</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014966"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006228"><img src="http://ticketimage.interpark.com/Play/image/large/19/19006228_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006228">뮤지컬 〈김종욱찾기〉 - 서울 대학로</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">컬처스페이스 엔유<br>2016.06.17~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006228"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013996"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013996_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013996">뮤지컬 〈키다리 아저씨〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">드림아트센터 1관<br>2019.10.15~2020.01.01</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013996"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014356"><img src="http://ticketimage.interpark.com/Play/image/large/19/19014356_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014356">뮤지컬 〈경종수정실록〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 TOM(티오엠) 1관<br>2019.10.27~2020.01.12</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014356"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013326"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013326_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013326">지하철 1호선</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">학전블루 소극장<br>2019.10.29~2020.01.04</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013326"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17000702"><img src="http://ticketimage.interpark.com/Play/image/large/17/17000702_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17000702">［뮤직드라마-당신만이］</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td height="20"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/i_tiki.gif"><b><font color="5FAF00">10%</font></b></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">JTN 아트홀 3관<br>2017.02.08~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17000702"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18014160"><img src="http://ticketimage.interpark.com/Play/image/large/18/18014160_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18014160">Let’s Dance, CRAZY!!_SACHOOM2</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">눈빛극장<br>2018.11.10~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18014160"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012542"><img src="http://ticketimage.interpark.com/Play/image/large/19/19012542_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012542">Original 행복자의 가족뮤지컬 〈넌 특별하단다〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 시온아트홀<br>2019.10.31~2020.01.18</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012542"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012250"><img src="http://ticketimage.interpark.com/Play/image/large/17/17012250_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012250">가족뮤지컬 〈어른동생〉 - 대학로</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 세우아트센터<br>2017.10.06~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012250"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013371"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013371_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013371">가족뮤지컬 다함께 다방구</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">업스테이지(UP STAGE)<br>2019.10.05~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013371"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012196"><img src="http://ticketimage.interpark.com/Play/image/large/17/17012196_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012196">국민뮤지컬〈사랑은 비를 타고〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">예술극장 나무와물<br>2017.10.07~2020.01.19</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17012196"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016871"><img src="http://ticketimage.interpark.com/Play/image/large/19/19016871_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016871">극단걸판뮤지컬 〈앤ANNE〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">콘텐츠 그라운드<br>2019.11.30~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016871"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015701"><img src="http://ticketimage.interpark.com/Play/image/large/19/19015701_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015701">더 스트레인저</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 마당세실극장<br>2019.11.05~2019.12.29</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015701"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19009572"><img src="http://ticketimage.interpark.com/Play/image/large/19/19009572_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19009572">동요콘서트〈구름빵〉 시즌2</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">예술극장 나무와물<br>2019.07.02~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19009572"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006822"><img src="http://ticketimage.interpark.com/Play/image/large/19/19006822_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006822">락 뮤지컬 〈프리즌〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">이수아트홀(대학로)<br>2019.05.13~2019.12.29</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19006822"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18002388"><img src="http://ticketimage.interpark.com/Play/image/large/18/18002388_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18002388">명작 가족뮤지컬 〈어린왕자의 크리스마스〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 마루아트홀<br>2018.03.10~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18002388"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017169"><img src="http://ticketimage.interpark.com/Play/image/large/19/19017169_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017169">뮤지컬 〈6시 퇴근〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">JTN 아트홀 1관<br>2019.12.10~2020.02.16</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017169"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017532"><img src="http://ticketimage.interpark.com/Play/image/large/19/19017532_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017532">뮤지컬 〈루나틱〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 문씨어터<br>2019.12.11~2020.03.01</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017532"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017530"><img src="http://ticketimage.interpark.com/Play/image/large/19/19017530_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017530">뮤지컬 〈안테모사〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로예술극장 대극장<br>2019.12.21~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017530"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015300"><img src="http://ticketimage.interpark.com/Play/image/large/19/19015300_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015300">뮤지컬 〈지브로〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 위로홀<br>2019.10.22~2019.12.21</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015300"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014439"><img src="http://ticketimage.interpark.com/Play/image/large/19/19014439_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014439">뮤지컬, 우리들의 사랑</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 예그린씨어터<br>2019.11.01~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19014439"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19004611"><img src="http://ticketimage.interpark.com/Play/image/large/19/19004611_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19004611">뮤지컬〈안녕,사춘기〉</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 아트포레스트 2관<br>2019.04.01~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19004611"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17016393"><img src="http://ticketimage.interpark.com/Play/image/large/17/17016393_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17016393">뮤지컬〈작업의 정석〉- 대학로</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 아트포레스트 2관<br>2017.01.05~2019.12.31</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=17016393"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013338"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013338_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013338">바람이 불어오는 곳 - 서울</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 SH아트홀<br>2019.11.15~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013338"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017326"><img src="http://ticketimage.interpark.com/Play/image/large/19/19017326_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017326">성냥팔이소녀와 캐롤송</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">서연아트홀<br>2019.11.30~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017326"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012286"><img src="http://ticketimage.interpark.com/Play/image/large/19/19012286_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012286">쏘왓(So What)</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">원패스아트홀<br>2019.08.29~2019.11.30</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012286"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013218"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013218_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013218">아기돼지삼형제</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 명작극장 1관<br>2019.09.14~2019.12.29</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013218"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016933"><img src="http://ticketimage.interpark.com/Play/image/large/19/19016933_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016933">어깨동무</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">소극장 혜화당<br>2019.12.10~2019.12.15</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016933"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015825"><img src="http://ticketimage.interpark.com/Play/image/large/19/19015825_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015825">어린이 뮤지컬 호두까기 인형</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 명작극장 1관<br>2019.11.02~2019.12.29</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19015825"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013928"><img src="http://ticketimage.interpark.com/Play/image/large/19/19013928_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013928">엄마는 안 가르쳐줘</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 시온아트홀<br>2019.12.03~2020.01.18</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19013928"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016353"><img src="http://ticketimage.interpark.com/Play/image/large/19/19016353_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016353">재생불량소년</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">동양예술극장 2관<br>2019.12.07~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016353"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr><tr><td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr valign="top">	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016452"><img src="http://ticketimage.interpark.com/Play/image/large/19/19016452_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016452">출동！슈퍼윙스 시즌3 - 우주기지를 지켜라！- 김포</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">통진두레문화센터 두레홀<br>2019.12.13~2019.12.14</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016452"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012529"><img src="http://ticketimage.interpark.com/Play/image/large/19/19012529_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012529">헨젤과 그레텔</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">대학로 명작극장 1관<br>2019.09.01~2019.12.29</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19012529"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	<td width="20">&nbsp;</td>	 
+					<td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody><tr>
+						<td width="90" valign="top"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017347"><img src="http://ticketimage.interpark.com/Play/image/large/19/19017347_p.gif" width="90" height="104" style="border:1px #EBEBEB solid;" border="0" onerror="javascript:this.src=&quot;http://ticketimage.interpark.com/Play/image/large/NoImage.gif&quot;"></a></td>
+						<td width="10"></td>
+						<td valign="top" height="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+							<tbody><tr>
+							  <td height="5"></td>
+							</tr>
+							<tr>
+							  <td class="ordertext1"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017347">호두까기인형(대학로)</a></td>
+							</tr>
+							<tr>
+							  <td height="5"></td>
+							</tr>
+							
+							<tr>
+							  <td class="textsmall"><font color="#999999">봄날아트홀<br>2019.11.30~2020.01.05</font></td>
+							</tr>
+							<tr>
+							  <td height="8"></td>
+							</tr>
+							<tr>
+							  <td align="left" valign="bottom"><a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19017347"><img src="http://ticketimage.interpark.com/TicketImage/event/tiki/reserve_b.gif" border="0"></a></td>
+							</tr>
+						</tbody></table></td>
+					  </tr>
+					</tbody></table>
+					</td>		
+		  
+	</tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+	</tbody></table></td>
+</tr>
+<!--******************* 대학로 공연 소개 *******************-->
+
+	
+
+
+<!--*******************footer 시작 *******************-->
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+//레이어 팝업
+$(".layers").click(function(e){
+    e.preventDefault();
+    //$("#layers").css("display","block");
+    $("#layers").slideDown();
+});
+$("#layers .close").click(function(e){
+    e.preventDefault();
+    //$("#layers").css("display","block");
+    $("#layers").slideUp(); checked
+})
+</script>

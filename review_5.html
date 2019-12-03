@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">무대쳅터</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">무대이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">뮤지컬 영상</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">작품설명</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('http://postfiles10.naver.net/20160807_9/coala_v_1470500888826anmDI_JPEG/documentTitle_4875844851470500762947.jpg?type=w773')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mu\mu5.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">스위니토드</h1>
+            <span class="review_in_h1">Sweeney Todd</span>
+            <p><span>2019</span>  
+               <span>한국</span>  
+               <a class="review_in_ni">16세이상 관람</a>
+            </p>
+            <p><span>뮤지컬</span><span>상영시간 : 160분</span></p>
+            <p>기간 : 2019.05.25 ~ 2019.07.28</p>
+            <p>장소 : 샤롯데씨어터</p>
+            <p>주연배우 :  홍광호(솔롱고) 옥주현(서나영)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>관람평점<span class="score">9.90</span></li>
+            <li>네티즌<span class="score">9.59</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption style="font-size: 28px; text-align: center;" >〈스위니토드〉 대표 출연배우</caption>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3871_013536.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3727_011.jpg"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_1446_01.jpg"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/16/08/0400041608_40155_02741.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/17/10/0400041710_41873_02447.gif" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/13/04/0400041304_31844_02303.gif"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>홍광호</td>
+            <td>옥주현</td>
+            <td>김도형</td>
+            <td>임준혁</td>
+            <td>신주협</td>
+            <td>최서연</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>스위니 토드 역</th>
+            <th>러빗 부인 역</th>
+            <th>터핀 역</th>
+            <th>안소니 역</th>
+            <th>토비아스 역</th>
+            <th>조안나 역</th>
+        </tfoot>
+        <thead id="main_Actior">
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4004_014558.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_1732_01.jpg"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_49_011.j735.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/16/08/0400041608_40155_02741.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/12/10/0400041210_30078_02919.gif" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/12/08/0400041208_29583_02134.gif"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>박은태</td>
+            <td>김지현</td>
+            <td>서영주</td>
+            <td>임준혁</td>
+            <td>신재범</td>
+            <td>이지수</td>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈스위니토드〉 Chapter</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">작품설명</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">한국공연</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">줄거리 1</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">줄거리 2</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"  style="width: 700px;"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri">
+            <p>작품설명</p>
+        <p class="p">브로드웨이 초연 40주년 완성도 높은 새로운 프로덕션 뮤지컬 <스위니토드></p>
+        <a>
+                1979년 3월, 유리스시어터(Uris Theatre) 오리지널 브로드웨이 프로덕션 초연 이후
+                Drama Desk Awards, Tony Awards, Laurence Olivier Award 등 세계 유수 시상식 석권
+                작품성과 흥행성을 동시에 인정받은 최고의 작품!
+                브로드웨이 사상 가장 혁신적인 작곡가 스티븐 손드하임
+                ‘지킬앤하이드’, ‘맨오브라만차’, ‘드라큘라’ 등을 흥행시킨 뛰어난 감각의 프로듀서 신춘수
+                손드하임의 작품을 27차례 올린 ＇스티븐 손드하임＇ 뮤지컬의 대가 연출 에릭 셰퍼
+                창의적인 생각과 독창적인 디자인으로 주목 받는 무대 디자이너 폴 테이트 드푸
+                그들이 펼치는 드라마, 무대, 음악의 완벽한 결합!
+                그리고 캐릭터들의 심리와 스토리를 미학적으로 표현한 그로테스크한 조명
+                드라마 흡인력을 높이는 웅장하고 압도적인 무대연출
+                19세기 시대상을 반영한 파격적이고 소름 돋는 반전 스토리와 입체적인 캐릭터
+                턱 끝에서 느껴지는 긴장감, 들어는 봤나 스위니토드                  
+        </a>
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+                <p class="p">한국공연</p>
+            <a>
+                한국에서도 2007년 공연한 적이 있으며 특히 양준모의 'Epiphany' 열창은 유튜브 등지에서도 호평이다. 보통 욕설은 번역 과정에서 순화되는데 한국 공연에서는 "X발 X같은" 등등의 순도 100% 욕으로 번역되었다(...) 또한 지금은 주연급 배우인 홍광호, 한지상의 지나가는 동네바보 토비어스는 한 번 지나간 캐스팅은 다시 안 돌아온다라는 것을 보여주는 좋은 사례이다. 심하게 암울하고 칙칙한 비극임에도 불구하고 묘하게 이 작품을 그리워하는 뮤지컬 마니아들이 상당히 많다.
+                2014년 재공연 예정이 잡혔으나 결국 오디션까지 치른 단계에서 엎어지고 말았다. 이에 관하여 제작사 뮤지컬헤븐의 경제적 사정이 많이 나쁘다는 소문이 돌더니 결국 뮤지컬헤븐은 법정관리를 신청하고 말았다. 이후 2016년 뮤지컬헤븐 대신 오디뮤지컬컴퍼니 주관으로 공연 예정이 잡혔다. 오디의 신춘수 프로듀서와 박용호 프로듀서가 前 뮤지컬헤븐 대표였던 박용호 프로듀서와 리드 프로듀서 역할을 번갈아가면서 공동으로 작업한다고 한다.
+                그리고 2016년 드디어 돌아왔다! 조승우, 양준모, 옥주현, 전미도 배우 등 공개 당시 실시간 검색어에 올랐을 정도로 화려한 캐스팅을 자랑했으며, 독특한 소재로 호불호가 갈려 반응이 신통치 않았던 지난번과 달리 연기야 말할 것도 없고 번안과 분위기 등을 대중적 취향에 맞추어 완화한 탓에 많은 사랑을 받았다. 그러나 지나친 아재개그 위주의 한국식 농담들을 남발하며 대중적 취향에 맞추다 보니 원작의 기괴함과 날선 비판의식이 가려졌다는 비판도 받았다. 지나치게 미니멀한 무대나 아홉 명밖에 안 되는 적은 앙상블 수도 아쉬움을 산 편. 별개로 앙상블들은 역할을 훌륭히 해내어서 많은 호평을 받았다.
+            </a>
+        </div>  
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+            <p class="p">줄거리</p>
+            <a>
+                    행복했던 삶을 몽땅 잃고 한순간에 나락으로 떨어진 이발사 벤저민 바커(조니 뎁 분)가 주인공. 바커는 어여쁜 아내와 갓 태어난 귀여운 딸과 함께 행복하게 살아가던 중에, 아내의 미모에 흑심을 품은 부패한 터핀 판사(알란 릭맨 분) 일당에 의해 아내를 빼앗겼다.
+
+                    토드는 러빗 부인(헬레나 본햄 카터 분)으로부터 자신이 없는 사이에 일어난 일을 들었다. 아내 루시는 남편이 붙잡혀간 후에 판사가 접근하면서 구애했어도 남편에 대한 깊은 사랑으로 모두 거부하며 갓난 딸과 함께 집을 떠나지 않고 눈물로 세월을 보내면서 남편을 기다렸다. 하지만 결국 판사의 하수인이었던 뱀포드 경사(티모시 스폴 분)의 '판사가 남편을 풀어주기로 했다'는 말에 속아서 파티 중이었던 판사의 집에 찾아갔다가 그대로 판사에게 원치 않게... 게다가 당시 주위에는 사람들도 많았는데, 어느 누구도 그녀를 도와주려 하지 않았고 오히려 깔깔대며 웃어대기만 했다. 이 사건으로 충격을 받은 루시는 스스로 독약(비소)을 마셨다.
+                    
+                    그는 징역이 다 끝나기도 전에 탈출해 선원 앤서니(제이미 캠벨 바우어 분)의 도움으로 이명인 '스위니 토드'로서 런던으로 돌아왔고, 예전 자신의 이발소 아랫집 러빗 부인에게 자신이 없는 동안 아내와 딸에게 일어난 일들을 전해듣고 원흉인 판사와 런던 전체에 복수하기로 한다.
+                    
+                    이발사로서의 명성을 높이기 위해 유명한 이탈리아인 이발사 '아돌프 피렐리'(사챠 바론 코헨 분)와의 면도 대결에서 승리하고, 판사의 부하인 비들에게 그 주 내에 면도를 해주기로 한다. 그리고 자신의 이발소에서 기다리던 중에 찾아온 피렐리가, 자신은 이탈리아인이 아닌 데이비 콜린스이며, 옛날 바커 이발소에서 자른 머리칼을 치워주던 잡부 소년이었다고 밝히면서 면도 대결 중 바커의 귀신 같은 면도 솜씨를 알아봤다고, '죄수가 런던에 돌아왔다는 사실을 함구해줄 테니 꼬박꼬박 돈을 달라'고 협박하지만... 결국 주전자와 면도칼 콤보에 의해 끔살당한다.
+                    
+                    그리고 그 직후 터핀 판사는 조애나에게 잘 보여 결혼하려고(조애나는 당연히 질색) 비들의 소개로 스위니네 면도를 하러 온다. 스위니는 복수의 순간을 즐기며 면도를 하는데 안 죽이고 판사와 아이러니하게도 같은 이성(異性)관을 노래하다가... 마지막 획을 긋기로 결정하는 순간 앤서니가 조애나와 몰래 도망치려 하니 도와달라고 외치며 들어온다. 망했어요 빡돈 판사는 이런 악한 놈 따위와 친분 쌓는 이발사라고 다시는 안 오겠다며 스위니는 자신의 1호 타깃을 영영 놓치게 된다. 그러는 도중 터핀이 자신을 거부하는 조애나를 앤서니 같은 "거리의 치한"들 따위가 마수를 뻗칠 수 없는 곳이라며 정신병동에 가둔다. 모든 계획이 도로 아미타불이 된 스위니는 마구잡이 화풀이로 이발하러 온 사람을 자신의 수모와 관계 없어도 전부 죽여버리기로 결심하고, 이 한층 더 미쳐가는 스위니가 부르는 노래가 바로 'Epiphany' 다.
+                    
+                    그러던 중 러빗 부인은 피렐리의 시체를 어떻게 처리할 지 얘기를 꺼내자 토드는 얼어붙는다. 그냥 오밤중에 인적 드문 곳에 묻어버리자고 하다가 러빗 부인이 듣도 보도 못한 발상으로 고기값도 비싼데 피렐리를 비롯한 각 계층의 사람들 가릴 것 없이 파이 재료로 쓰자는 제안을 한다. 방금 전까지 미쳐 닥치는 대로 사람을 죽이려 하던 스위니도 맞장구쳐서 갑자기 분위기가 바뀌며 둘은 덩실덩실 춤춘다. 원래 피렐리와 함께 조수 토비어스(이하 토비)를 처분하는 것은 러빗 부인마저 너무하다는 생각에, 피렐리가 없어진 것을 수상하게 생각하던 토비에게 피렐리가 떠나기 전 러빗 부인의 조수로 일하게 한다고 상의했다고(그리고 스위니가 진으로 좀 꼬셨다) 설득한다. 그리고 토비는 그녀의 인품에 감격해 곧 잘 따르는 조수가 되며 파이 가게에서 일하게 된다. 이후에 그 계획에 따라 스위니는 이발소에 찾아오는 모든 남자 손님들을 죽여 지하실로 떨어뜨리고, 러빗 부인은 그 시체로 파이를 만든다. 하지만 전부 죽이지는 않고 무연고자만 죽였다.
+                </a>
+        </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4" style="width: 700px;"> 
+    <div id="note_container" class="note_container" >
+        <div class="note_ri">
+        <p class="p">줄거리 2</p>
+        <a>
+                이발소도 파이 가게도 성업을 이루자, 러빗 부인은 토드에게 복수는 잊고 자신과 멀리 가서 결혼하여 살자고 권하지만 토드는 여전히 복수의 날만 벼르고 있었다.
+                한동안 그렇게 지내던 중 앤서니가 스위니와 러빗 부인을 찾아와서 조애나가 터핀 판사에 의해 정신병동에 갇혔다는 말을 하자, 결국 스위니는 앤서니에게 조애나를 꺼내오는 방법을 일러주고 데려오라고 한다. 그리고 토비에게 편지(안소니가 조애나를 빼올 거라고 이 이발소로 찾아오라는 내용)를 주며 터핀에게 주라고 한다. 그 심부름 후 자신에게 방해됨을 우려, 빵 굽는 곳에 가둔다. 그곳에서 토비는 인육의 사용을 눈치챈다. 그리고 스위니는 터핀을 기다리던 중 거지 여인이 들어온 것을 보더니, 그녀가 모든 것의 전말을 알고 있어(+터핀이 계단을 오르자) 죽인다. 그리고 은폐. 그 후 다시 터핀에게 '조애나가 당신의 얼굴을 보고 마음이 변할 수 있다' 투로 말하고, 면도 도중 그에게 자신의 정체를 알리고 죽인다. 거지 여인이 오기 전 숨어있던 조애나를 보고 '이 얼굴을 잊어라'라며 도망치게 해준다(조애나를 못 알아봄, 하지만 정말 죽일 뻔했다).
+                몇 분 뒤 뱀포드가 러빗 부인의 빵 굽는 곳 검사를 하러 오자 스위니는 그도 역시 죽인다. 그리고 토비도 죽이러 빵 굽는 곳에 갔더니 토비가 사라졌다. 토비를 찾던 도중 스위니는 자신이 미처 몰랐던 사실을 깨닫는데, 거지 여인이 자신의 아내 루시와 닮은 것 같은 느낌을 받고 뒤늦게야 사실을 깨닫는다. 그리고 러빗 부인을 책망했더니, 러빗 부인은 "난 그녀가 자살하려 비소를 마셨다고 했지 그게 성공했다고 한 적은 없다. 병원에서 앓더니 정신병자가 되어 나왔다. 난 당신을 사랑했기에 이 꼴을 보이기 싫었다"고 변명하며, 사실은 거지 여인이 스위니의 아내인 루시임을 알고 있었단 걸 시인한다. 그걸 듣던 스위니는 러빗 부인을 이해하는 듯 같이 춤을 추다가 러빗 부인을 화로에 밀쳐 죽인다.
+                자기가 아내를 죽인 사실에 슬퍼하며 아내의 시체를 끌어안는다. 그 순간, 스위니의 면도칼 중 하나가 땅에 떨어지더니 미쳐버린 토비가 나타나 러빗 부인을 죽인 분노에 면도칼로 스위니의 목을 그어 죽인다. 스위니는 인기척을 느낀 것 같으나 가만히, 오히려 고개를 들어 죽음을 받아들이며, 일말의 신음소리조차 없이 조용히 죽으며 영화가 끝난다.
+        </a>        
+        </div>
+    </div> 
+</div>
+
+<!-------제작노트 끝------->
+</div>
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈스위니토드〉 무대스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="http://img.hani.co.kr/imgdb/resize/2016/0629/00501710_20160629.JPG">
+    </div>
+    <div class="carousel-item">
+        <img src="http://img.hani.co.kr/imgdb/resize/2016/0629/00501711_20160629.JPG">
+    </div>
+    <div class="carousel-item">
+        <img src="http://img.hani.co.kr/imgdb/resize/2016/0629/00501709_20160629.JPG">
+    </div>
+    <div class="carousel-item">
+        <img src="http://73company.com/wp-content/uploads/2015/01/%EC%8A%A4%EC%9C%84%EB%8B%88%ED%86%A0%EB%93%9C4-650x400.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://73company.com/wp-content/uploads/2015/01/%EC%8A%A4%EC%9C%84%EB%8B%88%ED%86%A0%EB%93%9C2-650x400.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈스위니토드〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+    
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mRa4HuasDz8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1zmv-1w0vhA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xhZYtrT4CDE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+
+
+<section class="separator">
+        <a>〈스위니토드〉 작품설명 </a>
+    </section>
+<div id="review_bottom" style="display: table; vertical-align: middle;text-align: center; margin: 0 auto;">
+    <img src="http://ticketimage.interpark.com/Play/image/etc/19/19011716-06.jpg">
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>

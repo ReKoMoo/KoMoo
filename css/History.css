@@ -1,0 +1,182 @@
+
+li {
+    list-style-type: none;
+}
+
+
+
+body {
+    background-color: #0a222b;
+    
+}
+
+.wrapper {
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+dd {
+    font-family: Arial, Helvetica, sans-serif; font-size:14px;
+}
+
+
+.cover {
+    margin-top: 110px;
+    background: url(https://static8.depositphotos.com/1011030/822/i/950/depositphotos_8228333-stock-photo-broadway-at-times-square-by.jpg) ;
+    color: aliceblue;
+    background-repeat:no-repeat !important; 
+    background-size:cover !important; 
+    background-position:100% 70%; height:300px;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    transition: padding .5s;
+}
+.coverbn {
+    background-color: rgba(0,0,0,0.5);
+}
+.cover-title {
+    text-align: center;
+}
+
+
+.cover-center {
+    display: table; vertical-align: middle;text-align: center; margin: 0 auto;
+    font-family: 훈점보맘보B;
+    font-size: 40px;
+}
+
+.timeline {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.timeline:after {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    margin-top: 20px;
+    top: 5vw;
+    bottom: 0;
+    width: 6px;
+    border-radius: 5px;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    margin-top: 70px;
+}
+
+.card {
+    background-color: rgba(0,0,0,0.6);
+    color: #999;
+    padding: 0 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.card-icon {
+    width: 70px;
+    height: auto;
+    vertical-align: top;
+    margin: -35px 30px 0;
+}
+
+.card-title {
+    font-size: 20vw;
+    color: dodgerblue;
+    font-family: 'impact';
+    line-height: 1;
+    margin: 20px;
+}
+
+.card-definition {
+    margin: 20px;
+}
+
+.card-definition img {
+    margin-bottom: 20px;
+}
+
+.card-definition dt span {
+    color: dodgerblue;
+    display: block;
+    font-size: 0.5em;
+}
+
+@media ( min-width: 720px ) {
+    .cover {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .cover-title {
+        font-size: 7vw;
+    }
+    .timeline:after {
+        background-color: dodgerblue;
+    }
+    .timeline-item {
+        width: 50%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+        margin-left: auto;
+        margin-top: -150px;
+        margin-bottom: -200px;
+        text-align: left;
+    }
+    .card {
+
+        position: relative;
+    }
+    .card-title {
+    
+        font-size: 100px;
+        display: inline-block;
+        position: relative;
+    }
+    .card-title:after {
+        content: ' ';
+        position: absolute;
+        right: -60px;
+        top: 50%;
+        background-color: white;
+        border: 6px solid dodgerblue;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transform: translate(50%,-50%);
+        background-color: #0a222b;
+        z-index: 10;
+    }
+    .card-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .timeline-item:nth-child(even) .card-icon {
+        left: auto;
+        right: 0;
+    }
+    .timeline-item:nth-child(even) .card-title:after {
+        left: -60px;
+        transform: translate(-50%,-50%);
+    }
+}
+footer { background-color: rgba(255, 255, 255, 0.5);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,288 @@
+/*------------------------------------ 사이드바 메뉴 코딩 ---------------------------------*/
+div[class="sidebar"] {
+  box-shadow: 1px 1px px 1px black;
+  width: 150px;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  transition: all .35s;}
+  
+input[id="menuicon"]:checked + label + div {
+  right: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);}
+
+
+
+/* -------------------------- 사이드 메뉴바 코딩 -------------------------- */
+
+
+  .sidebarmenu { 
+    text-align: left; padding-left: 30px; padding-right: 20px; 
+    font-family:Noto Sans CJK SC Regular; font-size: 14px;
+    position: absolute; }
+
+  .sidebaricon { padding-bottom: 10px; padding-top: 2em; text-align: center;}
+
+  .sidebarmenu li {  
+    border-bottom: 1px solid rgb(182, 182, 182); padding: 10px 0px 10px 0;}
+
+
+/* -------------- 리뷰 시작 코딩 -------------*/
+.review_maun {
+  border-top: 3px solid black;
+  background-repeat:no-repeat !important; 
+  background-size:cover !important; 
+  background-position:50% 50% !important; height:430px}
+
+.review_maun .review_top {
+  background:rgba(0,0,0,0.3);
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  height: 430px;}
+
+
+
+.review_maun .reivew_poster { 
+  position: absolute; bottom: -20%; border: 5px solid white;}
+
+.review_maun .review_in { 
+  color: white; position: absolute;
+  right: 40%; top: 45%; }
+
+.review_maun .review_in { font-family: Noto Sans CJK SC Regular; font-size: 14px; }
+.review_maun .review_in span { padding-right: 25px; }
+.review_maun .review_in_h1 {font-size: 32px; font-family: Dynalight;}
+.review_maun .review_in p {padding-top: 3px;}
+.review_maun .review_in_ni { 
+  background: #f0ff1d;
+  padding: 2px 4px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;}
+
+  .review_maun .review_king table { 
+    position: absolute; text-align: center; right: 30%; 
+    font-size: 13px;
+    bottom: -18em;  color: white; font-family: Noto Sans CJK SC Regular;
+    border: 2px solid white; 
+    background:rgba(0,0,0,0.3)}
+
+  .review_maun .review_king table img {  width: 90px; height: 120px;}
+
+/* -----------리뷰사이트 review_Actor기능 추가---------*/
+
+.review_Actor { 
+  position: absolute;
+  bottom: -40px;
+  /* display: table; vertical-align: middle;text-align: center; margin: 0 auto; html 가운데 넣기위한 코딩*/
+  left: 5px;
+  display: table;
+  vertical-align: middle; text-align: center;
+  margin: 0 auto;   
+  font-size: 11.5px; 
+  position: relative;
+  height: 175px;
+  list-style: none;
+  padding-top: 9em;
+  font-family:Noto Sans CJK SC Regular;
+  border-bottom: 1px solid rgb(230, 230, 230);}
+
+.review_Actor .Actior { padding-top: 0;}
+
+.review_Actor .review_Actor_title h4 { 
+  padding-left: 90px; font-size: 32px; bottom: 4em; position: absolute;
+  font-family: Dynalight;} 
+.review_Actor .review_Actor_title span {
+  font-size: 24px; font-family:Noto Sans CJK SC Regular;}
+
+
+.review_Actor caption { text-align: left; font-size: 14px; padding-left: 5px;}
+
+.review_Actor th, td { padding: 0 0 0 5px; }
+
+
+s
+/* 제작노트 */
+
+
+.review_note {
+  border: 1px solid black;
+  border-radius: 20px;
+  border: 1px solid rgb(182, 182, 182);
+  display: table; vertical-align: middle;text-align: center; position: relative;
+  margin: 0 auto; max-width: 900px;  
+  background:rgba(170, 170, 170, 0.3);
+}
+
+.review_note_title {
+  margin: 0; padding: 0;
+  background: #fff; color: #000;
+  font-size: 29px;
+  box-sizing: border-box; padding-top: 5em;
+  font-weight: bold;text-align: center;
+  font-family: Dynalight;
+}
+.review_note_center { 
+  margin: 10px 10px 10px 10px;
+  text-align: left;
+  font-family:맑은고딕; font-size: 12px;
+  margin-left: 10px; 
+  color: white;
+  padding:3em 3em 3em 3em;}
+
+
+/* ----------------------------------제작노트---------------------------*/
+
+.tab_note {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  font-size: 13px; font-family:Noto Sans CJK SC Regular; padding-top: 4em; text-align: center; }
+
+.tab_note label {
+  border-radius: 0px 20px 0px;
+  border-left: solid 0.5px rgb(0, 0, 0); 
+  border-right: solid 0.5px rgb(0, 0, 0); 
+  border-top: solid 0.5px rgb(0, 0, 0);}
+
+
+.tab_note input[type="radio"] {display: none;}
+
+.tab_note input[type="radio"] + label {
+  display: inline-block;
+  padding: 10px; background: white; 
+  color: black; font-size: 13px; width: 80px; 
+  font-family:Noto Sans CJK SC Regular;
+  cursor: pointer; }
+
+.tab_note .notebox .note_container { 
+  text-align: center;}
+
+.tab_note .note_container .note_ri{ 
+  text-align: center; margin: 0px 30px 30px 30px; }
+
+.tab_note input[type="radio"]:checked + label { 
+  background: rgb(221, 221, 221); color: black; }
+
+.tab_note .note_container p{
+  font-size: 18px; color: #7a4747;}
+.tab_note .note_container .p {
+  padding-bottom: 10px;}
+
+
+.notebox {  
+  padding-top: 30px;
+  border-radius: 0px 50px 0px;
+  border-left: solid 0.5px rgb(165, 165, 165); 
+  border-right: solid 0.5px rgb(165, 165, 165); 
+  border-bottom: solid 0.5px rgb(165, 165, 165);
+  width: 1050px; height: auto; background: rgb(221, 221, 221); 
+  margin: 0 auto; display: none;}
+
+  .tab_note input[id="note01"]:checked ~ .note1 {display: block;}
+  .tab_note input[id="note02"]:checked ~ .note2 {display: block;}
+  .tab_note input[id="note03"]:checked ~ .note3 {display: block;}
+  .tab_note input[id="note04"]:checked ~ .note4 {display: block;}
+  
+  .tab_note input[id="note01"]:checked ~ .btn > label[for="note01"]{ background: black;}
+  .tab_note input[id="note02"]:checked ~ .btn > label[for="note02"]{ background: black;}
+  .tab_note input[id="note03"]:checked ~ .btn > label[for="note03"]{ background: black;}
+  .tab_note input[id="note04"]:checked ~ .btn > label[for="note04"]{ background: black;}
+
+/* ----------------------------------제작노트끝 -----------------------------------*/
+  
+  
+
+
+
+
+/* ------------------------- 슬라이드쇼 코딩 ------------------------- */
+.carousel {
+  bottom: 140px;
+  height: 400px; 
+  perspective: 600px;}
+
+.carousel .carousel-item {
+  width: 400px;}
+
+
+.carousel .carousel-item img { 
+  height: 300px;}
+
+
+.carousel .carousel-item span { box-shadow: rosybrown;}
+
+
+
+/* ------------- 슬라이드쇼 코딩 끝 ------------- */
+
+
+
+.mov_rating { font-family: Noto Sans CJK SC Regular;
+  position:absolute; right: 2%; bottom: 10px; }
+.mov_rating li {
+  background:rgba(0,0,0,0.3);
+  width:90px; font-size:11px; float:left; 
+  margin-left:15px; border:1px solid #ccc; 
+  padding:15px 0; text-align:center;  color: white;}
+.mov_rating li .score {
+  display:block; font-size:18px; color:#ff3368; font-weight:bold; }
+.mov_rating img {  text-align: center; width: 80px; height: 100px; padding: 7px 0 7px 0;}
+
+
+
+
+/* ------------------------------------동영상 탭-------------------------------------*/
+.tab_content {
+  margin-top: -130px;
+  margin-bottom: 50px;}
+
+.tab_content a {text-align: left;}
+
+.tab_content input[type="radio"]{
+display: none;
+}
+.tab_content iframe { 
+width: 700px; height: 400px;
+}
+.tab_content .conbox{
+max-width: 700px; height: 400px; 
+background: white; display: none;
+}
+.tab_content .btn {
+padding: 10px;
+text-align: center;
+}
+.tab_content label[for*="tab"]{
+display: inline-block;
+padding: 10px;
+background: #ccc;
+cursor: pointer;
+margin: 5px;
+border-radius: 100%;
+}
+.tab_content input[id="tab01"]:checked ~ .con1 {display: block;}
+.tab_content input[id="tab02"]:checked ~ .con2 {display: block;}
+.tab_content input[id="tab03"]:checked ~ .con3 {display: block;}
+
+.tab_content input[id="tab01"]:checked ~ .btn > label[for="tab01"]{ background: black;}
+.tab_content input[id="tab02"]:checked ~ .btn > label[for="tab02"]{ background: black;}
+.tab_content input[id="tab03"]:checked ~ .btn > label[for="tab03"]{ background: black;}
+
+
+/*-------------------------------------명대사 창-------------------------------------*/
+
+
+
+.review_Best { 
+  border-radius: 0px 50px 0px;
+  border:1px solid black;
+  width: 700px;
+  display: table; vertical-align: middle; 
+  text-align: center; margin: 0 auto; position: relative;}
+
+.review_Best img {width: 20px; height: 15px;}
+.review_Best_R {background: rgba(255, 255, 255, 0.5); margin: 10px 10px 10px 10px;   border-radius: 0px 50px 0px;}
+.review_Best p {font-family: 나눔명조; font-size: 19px; margin: 10px 10px; font-style:italic; color: rgb(0, 0, 0);}

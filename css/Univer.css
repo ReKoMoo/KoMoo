@@ -1,0 +1,168 @@
+/* 인터파크 소스 */
+.sC {display: table; vertical-align: middle; margin-left: 22%; position: relative; border: 1px solid black;
+padding-right: 150px; padding-bottom: 3px;  background: rgb(220, 220, 220);border-radius:10px;;
+font-size: 13px;} 
+.sC img {border-radius:10px 0 0 10px;}
+
+
+.Con_SM div.sC .sC_big {
+    position: relative;
+    width: 510px;
+    height: 151px;
+    margin-bottom: 15px;
+    display: block;
+    z-index: 1;
+  }
+  
+  .sC_big .bn_big {
+    position: relative;
+    top: 1px;
+    left: 0px;
+  }
+  
+  .sC_big .bn_big img {
+    width: 373px;
+    height: 149px;
+    z-index: 5;
+  }
+  
+  .sC_big ul {
+    position: absolute;
+    width: 150px;
+    z-index: 10;
+
+    right: 0;
+    top: 1px;
+  }
+  
+  .sC_big ul li {
+      
+    width: 170px;
+    height: 25px;
+    overflow: hidden;
+    line-height: 25px;
+  }
+  
+  .sC_big ul li a span {
+      
+    display: block;
+    padding: 0 0 10px 26px;
+    letter-spacing: -.1em;
+
+  }
+  
+  .sC_big ul li a {
+    border-bottom: 2px solid rgba(124, 124, 124, 0.9);
+    width: 150px;
+     border-left:1px solid black;
+    height: 24px;
+    display: inline-block;
+    text-align: left;
+    color: #6c6d6f;
+  }
+  
+  .sC_big ul li a:hover {
+    border-radius:0 10px 10px 0;
+    width: 150px;
+    height: 24px;
+    display: inline-block;
+    background: url("http://ticketimage.interpark.com/TicketImage/main/100506_sub/on_tabbn.png");
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://ticketimage.interpark.com/TicketImage/main/100506_sub/on_tabbn.png", sizingMethod="crop");
+    z-index: 10;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .sC_big ul li.on a {
+    width: 150px;
+    height: 24px;
+    display: inline-block;
+    background: url("http://ticketimage.interpark.com/TicketImage/main/100506_sub/on_tabbn.png");
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://ticketimage.interpark.com/TicketImage/main/100506_sub/on_tabbn.png", sizingMethod="crop");
+    z-index: 20;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .sC_big ul li.on a span {
+
+    display: block;
+    padding: 2px 0 0 26px;
+    letter-spacing: -.1em;
+  }
+  
+  .sC_big a:hover {
+    text-decoration: none;
+  }
+/* 인터파크 소스 */
+
+
+table,tr,td {
+  /*border:0;*/
+  font-family: "돋움", Dotum, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #33333b; margin: auto;
+}
+
+/*td.input3  input{ border:none; background:none;}
+  td.input3 { background-repeat:no-repeat;}
+  td.sales_m{ font-size:11px;}*/
+
+/* CSS이전 끝 */
+li {
+  list-style: none;
+}
+
+a {
+  color: #33333b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #da6464;
+  text-decoration: underline;
+}
+
+dl,dt,dd {
+  margin: 0;
+  padding: 0;
+}
+
+em,address {
+  font-style: normal;
+}
+
+.bn_TR iframe.pd table {
+  text-align: left;
+}
+
+.Un_table { padding: 50px 50px 50px 50px;}
+
+.separator1{
+  font-size: 20px;
+  margin-top: 100px;
+  width: 950px;
+  display: table; vertical-align: middle; text-align: center; margin: 0px auto; 
+}
+.separator2{
+  width: 100%;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 100px;
+  padding-top: 20px;
+ text-align: center; margin: 0px auto; 
+}
+
+/* 레이어 팝업*/
+.layers {position: absolute; top: 78.8em; right: 23%; }
+#layers { position: fixed; right:20px; top: 110px ;width: 400px; 
+   box-shadow: 5px 5px rgba(0,0,0,.5); z-index: 1000; display: none;}
+#layers img {width: 100%; display: block;}
+#layers .close {position: absolute; right: 20px; top: 20px;
+  background: #0093bd; padding: 1px 6px; color: #fff;}
+#layers .close:hover {text-decoration: underline;}
+
+/* 서울문화재단 로고 */
+.bn { position: absolute; top: 37em; right:68%;}

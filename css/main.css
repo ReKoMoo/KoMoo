@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+/* 베이스 코딩 */
+html { font-size: 16px; line-height: 1.5; }
+h1, h2, h3, p, ul { margin: 0; }
+ul { padding-left: 0; }
+ul li { list-style-type: none; }
+a { color: inherit; text-decoration: none; }
+img { vertical-align: middle; }   
+body { background-color: rgb(243, 243, 243);}
+
+
+.mobile-side-menu{display:none;}
+
+header .sticky {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+header .sticky .menu-bottom ul {
+  margin: 0;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgb(255, 255, 255,0.7);
+}
+
+.page-header:hover {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.menu-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-top-right .active-hidden{
+  display:-webkit-box; display:-ms-flexbox; display:flex; margin-right:10px;
+}
+
+.menu-top-right .active-hidden > a {
+  text-transform: uppercase; margin-right:10px;
+  font-weight:bold; border-bottom:2px solid #1e1e1e;
+}
+
+.menu-top-right .active-hidden > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-top-right .active-hidden > ul li {
+  margin: 0 5px;
+}
+
+.menu-top-right .active-hidden > ul li a {
+  font-size: 1.825em;
+}
+
+.menu-top-right fieldset {
+  position: relative;
+}
+
+.menu-top-right fieldset input {
+  line-height: 28px;
+  border: 1px solid #ccc;
+  padding: 0 15px 0 30px;
+  width: 145px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.menu-top-right fieldset .fa-search {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+/* 로고위치지정 코딩a */
+.site-logo {
+  float: left;
+  margin: 0px;
+}
+
+/* Primary nav 메뉴바의 옵션*/
+.primary-nav {
+  height: 100px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.primary-nav li {
+  float: left; /* li 글씨를 왼쪽에 고정*/
+}
+.primary-nav a {
+  display: block;
+  padding: 0 1.36em;
+}
+.primary-nav a:hover {
+  background-color: darkgray;
+}
+
+
+
+.slideshow{
+  border-top: 6px solid rgb(165, 165, 165);
+  border-bottom: 5px solid rgb(165, 165, 165);
+  margin-top: 6.2em;
+  background-color: white;
+  height: 465px; /* 메인 사진의 높이는 465로 고정 */
+  width: 100%; /*메인 사진의 너비는 최소 960로 고정 */
+  overflow: hidden;
+  position: relative;
+  
+}
+.slideshow_slides {
+  position: absolute;
+  width: 100%; /* 높이를 다쓴다 */
+  height: 100%; /* 너비를 다쓴다 */
+}
+.slideshow_slides a {
+  position: absolute;
+  width: 100%; /* 높이를 다쓴다 */
+  height: 100%; /* 너비를 다쓴다 */
+  text-align: center;
+}
+
+.slideshow_nav a {
+  width: 71px; /* png 사진파일의 고정된 위치! 넘어가는 사진 */
+  height: 71px; /* png 사진파일의 고정된 위치! 넘어가는 사진 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%); /* 메인사진의 중앙 50% 자리에 위치*/
+  background: url(../img/sprites.png) no-repeat; 
+  /* no-repeat 속성으로 반복x + 스프라이트 png의 좌료 71.71 부분이 나오고있다*/
+}
+
+/* 첫번째와 마지막에있을시 넘어가는버튼이 사라지게 none을 해준다*/
+.slideshow_nav a.disabled{display: none;}
+/* --------------------------넘어가기 버튼 코딩-----------------------------*/
+.slideshow_nav a.prev { /* prev 이전 버튼 사진 위치 지정 */
+  background-position: 0 -20px;
+  margin-left: -480px; /* next 버튼의 위치를 왼쪽에 고정 */
+  /* 여기 속성에서 background 속성을 쓰게되면 기존 a태그의 속성이 초기화됨 *** */
+}
+
+.slideshow_nav a.next { /* next 다음 버튼 사진 위치 지정 */
+  background-position: -81px -20px; 
+  margin-left: 409px; /* next 버튼의 위치를 오른쪽에 고정 */
+}
+
+
+/* --------------------------. . . .버튼의 코딩-----------------------------*/
+.indicator { /* . . . . 버튼의 고정 위치 */
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;  /* center를 넣게되면 단어취급이되어서 불편함 */
+  justify-content: center;
+}
+
+.indicator a {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px; /* justify 속성에 5px마다 떨어지라고 지정*/
+  background: url(../img/sprites.png) no-repeat -114px -4px; /* . . . . 사진의 좌표~*/
+  text-indent: -999em;
+}
+.indicator a.active {
+  background-position: -134px -4px; 
+}
+
+
+
+/*--------------- 사이드 메뉴바 코딩 -----------*/
+input[id="menuicon"] {display: none;}
+input[id="menuicon"] + label {display: block; width: 50px; height: 40px; position: fixed; right: 10px; 
+  top:calc(20% - 25px); transition: all .35s;  ;cursor: pointer;}
+input[id="menuicon"] + label span {display: block; position: absolute; width: 100%; height: 5px; 
+  border-radius: 30px; background: black; transition: all .35s; }
+input[id="menuicon"] + label span:nth-child(1){top: 0;}
+input[id="menuicon"] + label span:nth-child(2){top: 50%; transform: translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3){bottom: 0;}
+input[id="menuicon"]:checked + label {z-index: 2; right: 150px;}
+input[id="menuicon"]:checked + label span {background: 2;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top: 50%; transform: translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity: 0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+
+
+  
+  /*------------------------------------- 탭 메뉴 ------------------------------------*/
+  .tab_content {
+     padding-top: 2em; text-align: center;}
+  .tab_content label {
+     border-radius: 0px 20px 0px;
+     border-left: solid 0.5px rgb(165, 165, 165); 
+     border-right: solid 0.5px rgb(165, 165, 165); 
+     border-top: solid 0.5px rgb(165, 165, 165);}
+  .tab_content a { 
+    font-size: 25px; text-decoration: none; padding-right: 1em; font-family:Noto Sans CJK SC Regular;}
+
+  input[type="radio"] {display: none;}
+
+  input[type="radio"] + label {display: inline-block;
+  padding: 10px; background: white; 
+  color: black; font-size: 13px; width: 80px; 
+  font-family:Noto Sans CJK SC Regular;
+  cursor: pointer; }
+
+  input[type="radio"]:checked + label { 
+    background:rgba(209, 197, 197, 0.2); color: black; }
+
+  .conbox {  
+    width: 1050px; height: 237px; background: (209, 197, 197, 0.2); 
+    margin: 0 auto; display: none; }
+  input[id="tab01"]:checked ~ .con1 { display:block;}
+  input[id="tab02"]:checked ~ .con2 { display:block;}
+  input[id="tab03"]:checked ~ .con3 { display:block;}
+  
+  /* 탭메뉴 안 랭킹툴 설정*/
+ 
+  .conbox {  
+    border-radius: 0px 50px 0px;
+    border-left: solid 0.5px rgb(165, 165, 165); 
+    border-right: solid 0.5px rgb(165, 165, 165); 
+    border-bottom: solid 0.5px rgb(165, 165, 165);
+    width: 1050px; height: 237px; background: rgba(209, 197, 197, 0.2); 
+    margin: 0 auto; display: none;}
+  input[id="tab01"]:checked ~ .con1 { display:block;}
+  input[id="tab02"]:checked ~ .con2 { display:block;}
+  input[id="tab03"]:checked ~ .con3 { display:block;}
+
+  
+  /* --------------탭메뉴 안 랭킹툴 설정------------------*/
+
+  
+  .conbox .rankingContentTitle {
+    text-align: left; padding-left: 30px; padding-top: 7px; font-size: 15px;}
+  .conbox .contentMore { 
+    font-size: 10px; color: rgb(165, 165, 165); border-left: solid 1px rgb(165, 165, 165); padding-left: 5px;}
+
+  .conbox ul { 
+    margin: 0 auto;   
+    font-size: 11.5px; float: left;
+    position: relative; width: 102px;
+    height: 175px; margin-left: 23px;
+    list-style: none; padding: 30px 10px;
+    padding-top: -20px; text-align: left;
+    font-family:Noto Sans CJK SC Regular;
+}
+
+  .conbox li:hover {
+    box-shadow: #333;top: -5px ; 
+  }
+  
+
+  .conbox .Rank p img{ position: absolute;
+    height: 58px; width: 70px; display: inline-block; }
+
+  .conbox .Rankbox1 { border-right: solid 1px rgb(0, 0, 0);}
+  
+  .conbox li * { width: 102px; height: 131px;}
+
+/*--------------------------------------- 센터  -------*/
+  .separator{
+    font-size: 20px;
+    margin-top: 100px;
+    margin: 10px 10px 10px 10px;
+    width: 950px;
+    height: 100px;
+    background-color: rgb(243, 243, 243);
+    display: table; vertical-align: middle;text-align: center; margin: 0 auto;
+  }
+
+
+/* ---------------------------------------메인 콘텐츠--------------------------------- */
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Noto Sans CJK SC Regular;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;}
+
+.card article {
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;  }
+ 
+/* typography */
+.card h1 {
+  font-family: Dynalight;
+  font-size: 20px;
+  margin: 0;
+  color: #333;}
+ 
+.card p { 
+  font-family: Noto Sans CJK SC Regular;
+  flex: 1;
+  line-height: 1.4;
+  font-size: 11px;}
+
+.band {
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;}
+
+.card .thumb {
+  max-height: 100%;
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  
+}
+.card strong {
+  color: #333; }
+
+/* 카드 마우스 코딩*/
+
+@media only screen and (min-width: 800px) {
+
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .item-1 {
+  grid-column: 1/ span 2;
+  }
+  .item-1 h1 {
+    font-size: 30px;
+  }
+  
+  /* item 사진들의 height 사이즈를 직접 조정해줌*/
+  .item-2 .card .thumb {height: 200px}
+  .item-3 .card .thumb {height: 200px}
+  .item-4 .card .thumb {height: 200px}
+  .item-5 .card .thumb {height: 200px}
+  .item-6 .card .thumb {height: 200px}
+  .item-7 .card .thumb {height: 200px}
+  }
+
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+  /* 메인 카드 속성*/
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  
+
+/***************************************************************card hover 코딩***************************************************************/
+.thumb{
+  display:inline-block;vertical-align:middle;
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px rgba(0,0,0,0);
+  position:relative;-webkit-transition-property:color;
+  transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s}
+.thumb:before{
+  content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);
+  -webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;
+  -webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;
+  transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
+.thumb:active,.thumb:focus,
+.thumb:hover{color:#fff}
+.thumb:active:before,.thumb:focus:before,
+.thumb:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)}
+
+.thumb span { color: rgba(255, 255, 255, 0.5);}
+
+.thumb span {
+    opacity: 0; transition: .4s; position: absolute;
+    left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);}
+
+.thumb:hover span {opacity: 1; font-family:Noto Sans CJK SC Regular; color: white; font-size: 20px;}
+/***************************************************************card hover 코딩***************************************************************/
+
+    
+  /* 뮤지컬 배우소개 크기 코딩*/
+  .Actior{
+    text-align: center; font-size: 10px; font-family:Noto Sans CJK SC Regular;}
+       
+  .Actior img{width: 80px; height: 100px;}
+    
+
+  /* 카드에 마우스 올리면 그림자효과 shadow로 구현 top -2px를 넣어줌으로써 시각적효과추가*/
+  
+
+footer {
+  margin: 30px;
+  margin-bottom: -30px;
+  border-top: 1px solid black;
+}
+.rogo { /* footer 코딩*/
+  padding-top: 20px;
+  font-family: 11롯데마트행복Medium ;
+  text-align: center;
+  margin: 2em;
+  font-size: 10px;
+}
+.rogo.logo2{background-position-x: left;}
+.rogo.logo3{background-position-x: right;}
+.icon {
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+
+.go_top { /* 스크롤 버튼  코딩*/
+  /* z-index 속성으로 선택자 우선순위설정 */
+  z-index: 5;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  background: #333;
+  color: #fff;
+  right: 50px;
+  bottom: 50px;
+  text-align: center; /* 화살표가 가운데로 정렬*/
+  line-height: 40px;
+  display: none; /* none 사용자가 맨아래로 스크롤을 위치할때 생성 */
+}
+
+/* 베너 속성*/
+.vanner {
+  padding-top: 50px;
+  display: table; vertical-align: middle;text-align: center; margin: 0 auto;
+}
+.vanner img {
+  width: 960px;
+}
+/* 베너 속성 끝*/
+
+
+
+/* 레이어 팝업*/
+.layer {position: absolute; top: 650px; right: 1%;}
+#layer { position: fixed; left: 50px; top: 110px ;width: 400px; 
+   box-shadow: 5px 5px rgba(0,0,0,.5); z-index: 1000; }
+#layer img {width: 100%; display: block;}
+#layer .close {position: absolute; right: 20px; top: 20px;
+  background: #0093bd; padding: 1px 6px; color: #fff;}
+#layer .close:hover {text-decoration: underline;}
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+
+.wrapper {
+  padding-top: 28px;
+  max-width: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.menu_item {
+  margin: 0 0.125em;
+}
+
+.menu_item a {
+  border-radius:10px;
+  height: 3em;
+  line-height: 3em;
+  padding-right: 2em;
+  position: relative;
+  font-size: 20px;
+  font-family: Noto Sans CJK SC Regular;
+  color: rgb(0, 0, 0);
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.menu_item .fa {
+  background: rgb(248, 179, 179);
+  width: 3em;
+  text-align: center;
+  height: 100%;
+  line-height: inherit;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.menu_item span {
+  margin-left: 4.5em;
+  display: block;
+}
+
+.menu_item a:after {
+  content: '';
+  background: rgb(248, 179, 179);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+input {
+  display: none;
+}
+
+.burger {
+  width: 3em;
+  height: 3em;
+  background: #3498db;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 3em;
+  font-size: 1.2em;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.menu_item a:hover:after {
+  left: 0;
+  right: 0;
+}
+
+.menu_item a:hover .fa {
+  width: 3.6em;
+  font-size: 1.25em;
+}
+
+
+@media screen and (min-width:30rem) and (max-width:55rem) {
+  .site-logo img{
+    width: 90%;
+  }
+
+  .active-hidden {
+    width: 90;
+  }
+
+  .menu_item span {
+    margin-left: 1em;
+    width: 0;
+    transition: 0.3s ease;
+  }
+
+  .menu_item a:hover span {
+    width: auto;
+    margin-left: 4.5em;
+  }
+
+  .menu_item a:hover:after {
+    left: -100%;
+    right: 100%;
+  }
+
+  .menu_item a:hover .fa {
+    width: 3em;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width:30rem) {
+  .burger {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    top: 3.25em;
+    transition: 0.3s;
+  }
+
+  .menu_item {
+    margin: 0 0 0.25em 0;
+  }
+
+  #open_menu:checked~nav {
+    left: 0;
+  }
+
+  #open_menu:checked+.burger {
+    background: #2980b9;
+  }
+
+}

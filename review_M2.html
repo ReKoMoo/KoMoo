@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+    
+<!----------- slideshow 시작 ----------->
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">제작노트</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">스틸이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">메인예고편</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">명대사 & OST</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬영화 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('http://image.cine21.com/cine21/still/2017/1128/51235_5a1cc084514a7.jpg')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mo\RANKING\b3.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">위대한 쇼맨</h1>
+            <span class="review_in_h1">The Greatest Showman </span>
+            <p><span>2017</span>  
+               <span>미국</span>  
+               <a class="review_in_ni">12세 관람가</a>
+            </p>
+            <p><span>뮤지컬, 드라마</span><span>상영시간 : 104분</span></p>
+            <p>개봉일 : 2017-12-20</p>
+            <p>감독 : 마이클 그레이시</p>
+            <p>주연배우 : 휴 잭맨(P.T 바넘) 잭 에프론(필립 칼라일)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>감독<span class="review_top2_top">
+                <img src="img1\mu\Actor2\Showman7.jpg">
+                마이클 그레이시</span></li>
+            <li>기자 · 평론가 평점<span class="score">6.60</span></li>
+            <li>네티즌<span class="score">9.37</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <div class="review_Actor_title"><h4>〈위대한쇼맨〉<span> 영화 출연배우진</span></h4></div>
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption>대표 출연배우</caption>
+            <th id="img"><img src="img1\mu\Actor2\Showman1.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Showman2.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Showman3.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Showman4.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Showman5.jpg" ></th>
+            <th id="img"><img src="img1\mu\Actor2\Showman6.jpg"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>휴잭맨</td>
+            <td>잭 에프론</td>
+            <td>레베카 퍼거슨</td>
+            <td>미셸 윌리엄스</td>
+            <td>젠다야 콜맨</td>
+            <td>야히아 압둘 마틴 2세</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>P.T 바넘 역</th>
+            <th>필립 칼라일 역</th>
+            <th>제니 린드 역</th>
+            <th>체러티 바넘 역</th>
+            <th>앤 휠러 역</th>
+            <th>WD 휠러 역</th>
+        </tfoot>
+    </table>
+</div>
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈위대한쇼맨〉 제작노트</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">ABOUT MOVIE 1</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">ABOUT MOVIE 2</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">ABOUT MOVIE 3</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">ABOUT MOVIE 4</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri"><p>ABOUT MOVIE 1</p>
+            <p>2017년 크리스마스를 화려하게 장식할 단 하나의 뮤지컬 영화!</p>
+        <p class="p">세상과 마주한 특별한 이들의 감동 스토리 탄생!</p>
+        <a>최근 극장가에 다시 한번 뮤지컬 영화의 바람이 불어오고 있다. 2012년 <레미제라블> 흥행 이후, 2016년 <라라랜드>와 2017년 <미녀와 야수>가 각각 350만 명, 510만 명의 관객을 모으며 흥행 돌풍을것이다. 일으킨 것. 먼저 <라라랜드>는 쉽게 공감할 수 있는 스토리와 독특한 연출, 그리고 듣는 순간 마음을 빼앗길 수 밖에 없는 O.S.T로 관객들의 사랑을 독차지 했다. 특히 국내외에서 특정 장면을 패러디하는 것이 유행하며 신드롬이라 불릴 만큼의 인기를 모았다. 이어 <미녀와 야수> 역시 원작 애니메이션과의 높은 싱크로율, 현대적인 감각으로 재해석된 O.S.T로 가족 관객뿐만 아니라 성인 관객까지 공략하며 흥행에 성공했다. 이렇듯 다채로운 매력으로 관객들의 사랑을 받은 뮤지컬 영화들이 속속 등장하고 있는 가운데, 올 연말 크리스마스를 맞이해 그에 어울리는 환상의 무대를 선보일 뮤지컬 영화가 바로 <위대한 쇼맨>이다.<위대한 쇼맨>은 쇼 비즈니스의 창시자라 불리는 ‘바넘’의 이야기에서 영감을 받아 탄생한 작품으로, ‘바넘’ 역에 휴 잭맨을 비롯해 잭 에프론, 미셸 윌리엄스, 레베카 퍼거슨, 젠다야 등 할리우드가 자랑하는 실력파 배우들의 뛰어난 연기력과 춤, 노래까지 다채로운 면모를 확인할 수 있다. 뿐만 아니라 적재적소에서 눈과 귀를 사로잡는 O.S.T와 안무는 보는 이들에게 즐거움을 선사할 예정이다. 여기에 다른 작품과는 차별화되는 <위대한 쇼맨>만의 특별한 메시지를 담아내 재미를 넘어서는 감동까지 전하며 울림을 불러일으킬  극 중 ‘바넘’은 그의 쇼에 서는 모든 이들이 스스로에 대한 자부심을 갖게 해주며, 선천적인 특징 때문에 사회로부터 소외된 사람들을 모아 그들이 세상에 참여할 수 있게 한다. 그들이 쇼를 통해 점점 변화해가는 모습, 그리고 그들이 세상 밖으로 나올 수 있게 했던 ‘바넘’ 역시 그들을 통해 새로운 자신을 발견해가는 모습은 보는 이들에게 가슴을 울리는 뜨거움을 전달할 것이다. ‘바넘’을 연기한 휴 잭맨은 이에 대해 “위험을 무릅 쓰면서 꿈을 따라가고, 그 안에서 모든 사람이 가진 특별함을 축하하는 이야기라는 점이 무척 와닿았다”고 전해 영화에 고스란히 녹아든 ‘우리 모두는 특별하다’라는 메시지가 어떻게 영화에서 구현될지 기대감을 높인다. 이처럼 <위대한 쇼맨>은 단순히 즐길 거리만이 있는 뮤지컬 영화가 아닌 의미를 담은 작품으로 세대를 불문하고 크리스마스에 극장가를 찾은 관객들에게 재미와 감동을 동시에 선사하며 올 겨울 극장가를 사로잡을 것이다.</a>
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>ABOUT MOVIE 2</p>
+            <p>휴 잭맨, 2017년 가장 화려한 쇼맨으로 돌아왔다!</p> 
+            <p>미셸 윌리엄스 & 레베카 퍼거슨 팔색조의 그녀들부터</p>
+            <p class="p">잭 에프론 & 젠다야 뉴 라이징 스타들까지!</p>
+        <a><엑스맨> 시리즈의 ‘울버린’으로 국내 관객들에게도 많은 사랑을 받고 있는 배우 휴 잭맨이 다시 한번 뮤지컬 영화로 돌아온다. 2012년 <레미제라블>로 제70회 골든 글로브 시상식에서 뮤지컬코미디 부문 남우주연상을 수상하고 제85회 아카데미 시상식에서 남우주연상에 노미네이트 되었던 휴 잭맨이 선보이는 뮤지컬 영화에 대한 기대감 역시 높아지고 있다. <위대한 쇼맨>의 각본을 맡은 <미녀와 야수>의 연출 빌 콘돈은 2009년 휴 잭맨이 진행자로 나섰던 아카데미 시상식의 방송을 준비하던 도중 휴 잭맨이 선보이는 뜨거운 열정과 눈부신 쇼를 보며 ‘바넘’에 어울리는 배우는 휴 잭맨 외에 없다는 사실을 깨달았다고 한다. 프로듀서 로렌스 마크는 “휴 잭맨은 가뿐하면서도 자연스럽게 무대를 휘어잡는 DNA를 타고난 배우다. 여기에 카리스마까지 겸비해 그를 따라올 사람은 없다고 생각한다”며 춤과 노래, 연기를 모두 완벽하게 소화한 휴 잭맨을 극찬해 <위대한 쇼맨>에서 자신의 옷을 완벽하게 입은 그에 대한 기대감을 증폭시킨다. 휴 잭맨은 “바넘은 벽을 허문 인물이다. 그는 계급이나 인종, 배경에 상관 없이 누구나 자신의 선택에 따라 무엇이든 될 수 있다는 사실을 대변한다”며 캐릭터에 대한 각별한 애정을 드러냈으며, 특히 리허설 단계부터 ‘바넘’을 완성하기 위해 연습 중의 부상에도 불구하고 자신의 모든 것을 쏟아 부은 것으로 알려져 그가 선사할 최고의 무대에 대한 호기심을 자극한다.이어 ‘바넘’의 아내 ‘채리티 바넘’ 역에 미셸 윌리엄스, 전 세계를 사로잡은 소프라노 ‘제니 린드’ 역에 레베카 퍼거슨은 모두 휴 잭맨과 환상적인 호흡을 자랑한다. 먼저 <맨체스터 바이 더 씨> <셔터 아일랜드> 등 다양한 작품에서 뛰어난 연기력을 선보여온 미셸 윌리엄스는 아카데미, 골든글로브 등 유수의 시상식에 노미네이트 되며 관객과 평단의 사랑을 받아왔다. <위대한 쇼맨>에서는 춤과 노래 실력까지 선보일 것으로 알려져 더욱 기대를 더하고 있는 가운데, 미셸 윌리엄스는 “휴 잭맨과는 오랫동안 친구였는데, 이번 작품을 통해 함께 춤을 추고 노래를 부를 수 있어 행복했다”고 소감을 밝혀 두 사람의 시너지를 기대케 한다. <미션 임파서블: 로그네이션>으로 단숨에 얼굴을 알린 레베카 퍼거슨은 <위대한 쇼맨>을 통해 처음으로 뮤지컬 영화에 도전한다. ‘제니 린드’가 목소리만으로 모두를 사로잡는 매력을 가진 인물인만큼, 레베카 퍼거슨은 노래 연습에 오랜 시간과 노력을 투자했다는 후문. 그런 그녀에 대해 호흡을 맞춘 휴 잭맨은 “레베카 퍼거슨은 정말 훌륭하다. 많은 분량이 아님에도 관객들에게 강렬한 인상을 남길 것이다”라며 극찬을 아끼지 않아 더욱 기대를 더하고 있다.잭 에프론과 젠다야, 두 명의 라이징 스타도 주목해야 할 포인트 중 하나. <헤어스프레이> <하이 스쿨 뮤지컬> 시리즈 등 뮤지컬 영화에서 두각을 나타낸 바 있는 잭 에프론은 이번에 ‘바넘’의 파트너인 ‘필립 칼라일’로 분해 다시 한번 자신의 매력을 발산한다. <스파이더맨: 홈커밍>에 이어 두 번째 시리즈에도 캐스팅 되며 존재감을 알린 젠다야 역시 가수로 활발하게 활동하고 있는만큼, <위대한 쇼맨>에서 그 장기를 십분 발휘할 예정이다.
+        특히 잭 에프론과 젠다야는 함께 공중 곡예를 선보이는데, 몇 달 동안이나 전문 공중그네 곡예사들과 연습을 거듭한 끝에 별도의 안전 장치 (하네스) 없이 두 사람의 호흡만으로 아찔한 장면을 성공해내 보는 이들의 눈과 귀를 동시에 사로잡을 것이다. 이처럼 휴 잭맨부터 미셸 윌리엄스, 레베카 퍼거슨, 잭 에프론, 젠다야까지 최고의 배우들이 선사하는 앙상블로 기대감을 더하고 있는 <위대한 쇼맨>은 올 겨울 최고의 뮤지컬 영화로 극장가에 즐거움을 전할 예정이다.</a> 
+        </div>
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>ABOUT MOVIE 3</p><p>뮤지컬 영화의 매력은 바로 O.S.T!</p>
+            <p class="p"><라라랜드> 작사 팀의 환상적인 음악 & 완벽한 안무를 확인하라!</p>
+        <a>뮤지컬 영화의 요소 중 가장 많은 부분을 차지하는 것 중 하나가 바로 O.S.T다. 영화의 스토리를 이끌어가는 역할을 할 뿐만 아니라 관객들에게 영화에 더욱 몰입할 수 있는 기회를 제공하기 때문이다. <위대한 쇼맨>의 O.S.T는 제89회 아카데미 시상식에서 <라라랜드>로 주제가상을 수상한 바 있는 벤지 파섹과 저스틴 폴 콤비가 맡았다. <라라랜드>가 개봉하기 전 <위대한 쇼맨>의 작업을 맡았기에 두 사람은 유명세가 없음에도 그들의 능력을 보고 믿음을 준 마이클 그레이시 감독에 대한 고마움을 전했다. “마이클 그레이시 감독은 대부분의 장면에서 캐릭터를 발견하는 것에 있어 뛰어난 능력을 보여주었다. 그의 지지가 있었기에 완수해낼 수 있는 작업이었다. 그는 진정한 조력자다”라고 전한 두 사람은 감독의 지지 속에 아름다운 곡들을 만들어냈다. 특히 마이클 그레이시 감독은 <위대한 쇼맨>의 곡들이 모두 시대에 구애 받지 않는 모던한 록과 팝을 결합한 느낌을 가진 곡이길 원했고, 그 속에서도 시대적인 배경과 너무 동떨어지지 않아야 한다는 미션이 있었다. 벤지 파섹과 저스틴 폴은 각각의 영화 속 상황에서 최대한 많은 메시지와 스토리라인을 담아내기 위해 노력했다고 한다. 그 중 가장 심혈을 기울인 작품이 <위대한 쇼맨>을 대표하는 ‘This is Me’ 라는 곡으로, 모두에게 만족스러운 결과를 내기 위해 여러 차례 시도를 거쳐 탄생했다. 벤지 파섹은 곡에 대해 “온 세상이 사랑 받을 자격이 없다고 말해도 자신을 사랑하고 자신감을 얻는 법을 배워야 한다는 메시지를 담고 있기 때문에, 날 것 그대로의 힘으로 강렬하게 노래하는 여성의 목소리가 필요했다”며 킬라 세틀이 부른 ‘This is Me’에 대한 기대감을 높였다.마이클 그레이시 감독은 이렇게 완성된 곡에 더욱 강렬한 생명력을 불어넣기 위해 함께 광고 작업을 했던 안무가 애슐리 월렌을 섭외했다. 그는 리드미컬하고 테크닉이 요구되는 역동성 있는 안무를 완성했다. 때문에 배우들은 안무를 완벽하게 숙지하기 위해 수개월의 리허설을 거쳤고, 노력 끝에 완벽하게 합을 맞추는 것에 성공했다. 휴 잭맨은 이번 안무에 대해 “예전에 해본 적 없는 동작들을 많이 해봤다. ‘내 다리가 20년만 젊었더라면’ 이라고 생각했을 정도다. 하지만 열심히 노력한 끝에 이 모던하고 멋진 안무를 소화할 수 있어서 기쁘다”고 전해 그가 선보일 안무에 대한 기대감을 높였다. 애슐리 월렌은 ‘Rewirte the Stars’를 배경으로 잭 에프론과 젠다야가 함께 펼친 공중 곡예 안무에 대해서도 “와이어 동작이 많았고 분명 어려움이 있었을텐데, 90% 이상을 두 배우가 소화했다. 엄청난 훈련을 거쳐 탄생한 장면”이라고 전해 <위대한 쇼맨>에서만 확인할 수 있는 진정한 ‘뮤지컬’의 매력에 대한 호기심을 자극한다.</a>
+    </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>ABOUT MOVIE 4</p>
+            <p>무대 위에서 가장 빛나는 그들!</p>
+        <p class="p">완벽하게 구현된 비주얼 제작기 전격 공개!</p>
+        <a>마이클 그레이시 감독은 노래와 안무, 캐릭터뿐만 아니라 배경과 소품, 의상 등 비주얼의 디테일에도 심혈을 기울였다. 그가 가장 중요하게 생각한 것은 시대에 구애 받지 않고 언제 봐도 감탄을 불러 일으킬 만한 스타일을 만들어내는 것이었고, 이를 위해 최고의 제작진이 뭉쳤다. 먼저 <어톤먼트> <안나 카레니나> 등의 작품으로 실력을 인정 받은 촬영 감독 시머스 맥가비는 안무를 더욱 역동적으로 보이게 하는 독창적인 카메라 워킹과 현대적인 컬러감으로 마이클 그레이시 감독의 요구에 화답했다. 특히 다채로운 조명으로 각각의 노래와 안무에 담긴 화려함과 다이내믹한 분위기를 살려 뮤지컬 영화다운 환상적인 화면의 효과를 만들어냈다. 여기에 프로덕션 디자이너 나단 크로리는 시대적 배경과 너무 동떨어져 있지 않으면서도 감각적인 비주얼을 만들어내기 위해 고군분투 했다. 먼저, 3D 프린터를 활용해 당시 뉴욕의 거리를 미니어처로 만들어 디자인했을 뿐만 아니라 ‘바넘’의 공연장이자 박물관을 브루클린에 위치한 세트장에 제작했다. 공중 곡예부터 공연까지, 다양한 각도에서 촬영을 진행해야 했기에 그들이 선보일 쇼에 적합한 공간이어야 했고 결국 다양한 논의 끝에 위에서 아래, 아래에서 위를 바라볼 수 있는 카메라 동선이 가능한 세트를 만들어냈다.각 캐릭터의 의상도 마찬가지로 시대적인 느낌을 살리되, 현대의 세련된 느낌을 놓치지 않기 위해 노력했다. 의상 디자이너 엘렌 미로닉은 “창의성을 발휘할 수 있는 더 없이 좋은 기회였다”며 패션 잡지에 실릴 법한 판타지스러운 요소들을 가미했다고 밝혔다. 대부분의 의상을 수작업으로 만들어낸 의상 팀은 휴 잭맨의 경우 긴 팔다리를 강조하며 춤의 동선이 살아날 수 있는 라인을, 잭 에프론의 경우 발레리노의 느낌을 살리면서도 전통에서 벗어난 스타일로 그가 자유로운 삶을 찾아갈 것이라는 느낌을 주려고 노력했다. 여성 캐릭터들 역시 각 캐릭터가 지닌 스토리나 설정에 맞는 의상으로 매력을 더했다. ‘채리티 바넘’은 클래식하면서도 로맨틱한 디자인의 의상을, ‘제니 린드’는 그 어떤 것에도 영향을 받지 않는 세계적인 엔터테인먼트 아이콘을 표현하기 위해 강하면서도 화려한 의상들로 제작되었다. ‘제니 린드’역의 레베카 퍼거슨은 “엘렌이 만든 옷은 바로 [보그]나 [엘르] 같은 패션지에 실려도 손색이 없을만큼 패셔너블했다”고 극찬을 아끼지 않았다. 마지막으로 젠다야가 연기한 ‘앤 휠러’의 의상에는 통통 튀는 젊음과 저항적인 자유로움을 담아냈다. 자주색, 청록색 등 다채로운 컬러를 활용하면서 젠다야의 몸매를 살릴 수 있는 실크 소재로 제작된 의상들은 보는 이들의 시선을 단숨에 사로잡는다. 이처럼 완벽한 비주얼을 위해 할리우드 최고의 제작진이 심혈을 기울인 영화 <위대한 쇼맨>은 눈을 뗄 수 없는 매력으로 올 겨울 최고의 볼거리를 선사할 것이다.</a>
+        </div>
+    </div> 
+</div>
+
+<!-------제작노트 끝------->
+</div>
+
+
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈위대한쇼맨〉 스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="img1\review\mo/show1.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="img1\review\mo/show2.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="img1\review\mo/show3.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="img1\review\mo/show4.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="img1\review\mo/show5.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈위대한쇼맨〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+    
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cnIOq6P8PUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xzGYscf3eDg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Oqkn5hu_k6E" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+<section class="separator">
+        <a>〈위대한쇼맨〉 명대사</a>
+    </section>
+    <div class="review_Best" id="review_bottom" style="background:url('http://image.cine21.com/cine21/still/2017/1128/51235_5a1cc084514a7.jpg')no-repeat center">
+        <div class="review_Best_R">
+    <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"모두에게 사랑받을 필욘없어요 곁에 좋은사람만 몇있으면 된거예요"</p>
+            <p>채러티 바넘</p>
+        <img src="img/note2.png">
+    </div><hr>
+     <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"공연을 즐기지 못하는 공연 평론가가 진짜 사기꾼이지"</p>
+            <p>P.T 바넘</p>
+        <img src="img/note2.png">
+    </div><hr>
+     <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"사람은 누구나 특별하다"</p>
+            <p>채러티 바넘</p>
+        <img src="img/note2.png">
+    </div><hr>
+    <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"당신은 우리를 주목받게 해줬고 진정한 가족을 선물해줬어요."</p>
+            <p>레티 러츠</p>
+        <img src="img/note2.png">
+    </div>
+    </div>
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>

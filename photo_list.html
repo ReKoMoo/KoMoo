@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/hover-min.css' %}%">
+<link href="{% static 'css/ranking.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/reviewmain.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static 'js/vendor/modernizr.custom.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-1.10.2.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-ui-1.10.3.custom.min.js' %}"></script>
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/review.css' %}">
+<link rel="script" href="{% static 'js/main.js' %}">
+<script src="{% static 'js/review.js' %}"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="{% static 'css/menu_style.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="{% static 'img/mainicon.png' %}">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1" >
+    <div class="menu-top">
+       <div class="site-logo"><a href="../index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="../index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="../board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="../University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="../History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="../index.html">KoMoo review
+                    <p><img src="{% static 'img/Search.png' %}" alt="logo" style="width: 100; height:20px" ></p></a>
+                    <ul>
+                        <li><a href="../login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="{% static 'img/main.png' %}" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="{% static 'img/main2.png' %}" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="{% static 'img/main3.png' %}" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="{% static 'img/main4.png' %}" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="{% static 'img/mainicon.png' %}" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_note">제작노트</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">스틸이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">메인예고편</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">명대사 & OST</a></li>
+
+        </ul>
+    </div>
+</label>
+
+
+
+<!--ㅇㅇㅇㅇㅇ-->
+
+<!------------------------------------------ 컨텐츠 시작 ------------------------------------------>
+
+<div id="disqus_thread" href="http://foo.com/bar.html#disqus_thread"></div>
+<script>
+
+/***  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://komu.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+  
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="../index.html" class="logo2"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="{% static 'img/logo2.png' %}" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+    <i class="fas fa-arrow-circle-up" ></i>
+</a>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script id="dsq-count-scr" src="//komu.disqus.com/count.js" async></script></body>
+</html>

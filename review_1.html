@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+<!----------- slideshow 시작 ----------->
+
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">무대쳅터</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">무대이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">뮤지컬 영상</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">작품설명</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('https://file.mk.co.kr/meet/neds/2015/04/image_readtop_2015_409832_14302893961900447.jpg')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mu\mu1.1.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">데스노트</h1>
+            <span class="review_in_h1">Death Note</span>
+            <p><span>2015</span>  
+               <span>한국(원작:일본)</span>  
+               <a class="review_in_ni">7세이상 관람</a>
+            </p>
+            <p><span>뮤지컬</span><span>상영시간 : 175분</span></p>
+            <p>기간 : 2015년, 2017년</p>
+            <p>주연배우 :  홍광호(야가미 라이토) 김준수(L)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>관람평점<span class="score">9.20</span></li>
+            <li>네티즌<span class="score">9.79</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <div class="review_Actor_title"><h4>〈데스노트〉<span>출연배우진</span></h4></div>
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption>대표 출연배우</caption>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3871_013536.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/09/11/0400040911_18920_023.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3738_013105.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4263_012142.gif"></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/11/07/0400041107_26127_021.gif" ></th>
+            <th id="img"><img src="http://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4127_011.jpg"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>홍광호</td>
+            <td>김준수</td>
+            <td>정선아</td>
+            <td>박혜나</td>
+            <td>강홍석</td>
+            <td>이종문</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>야가미 라이토 역</th>
+            <th>L 역</th>
+            <th>아마네 미사 역</th>
+            <th>렘 역</th>
+            <th>듀크 역</th>
+            <th>야가미 소이치로 역</th>
+        </tfoot>
+    </table>
+</div>
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈데스노트〉 Chapter</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">#Chapter 1</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">#Chapter 2</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">#Chapter 3</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">#Chapter 4</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"  style="width: 700px;"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri">
+            <p>#Chapter 1</p>
+        <p class="p">한 권의 노트에서 모든 것이 시작되었다!</p>
+        <a>
+            2003년 슈에이샤의 ‘주간소년 점프’에서 첫 연재를 시작한 만화 ‘데스노트(Death Note)’
+            정의의 이름을 건 두 천재의 예측불가한 치밀한 두뇌 싸움을 표현한 작품으로
+            출간 이후 약 30여개 국가의 언어로 번역되어 전세계 누적판매량 3,000만부 돌파 기록!
+            원작 완결 이후 10년간 애니메이션, 영화, 드라마, 뮤지컬 등 다양한 분야에서 새롭게 재탄생!
+            장르와 지역을 뛰어넘어 전세계적인 사랑을 받고 있는 ‘데스노트’
+            NEW MUSICAL
+            원작을 뛰어넘을 글로벌 프로젝트의 시작
+            만화 <데스노트(원작 오바츠구미, 만화 오바타타케시)>를 원작으로 탄생
+            작품성과 흥행성을 검증받은 치밀한 심리전을 기본으로 하는 탄탄한 스토리
+            애니메이션, 영화 등 다양한 장르에서 수많은 흥행 기록 달성
+        </a>
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+            <p>#Chapter 2</p>
+            <p class="p">미국과 일본 공연계 거장들의 역사적인 만남, 세기의 뮤지컬의 탄생!</p>
+            <a>
+                    최고 크리에이티브팀의 만남, 또 하나의 걸작을 탄생시키다!
+                    섬세하면서도 정확한 연출로 관객, 배우들의 절대적인 지지를 받는 일본 공연계 거장 쿠리야마타미야 연출
+                    <지킬앤하이드><드라큘라> 작곡 ‘한국인이 가장 사랑하는 작곡가’프랭크와일드혼
+                    <보니 앤 클라이드> 작곡 이반 멘첼<몬테크리스토><카르멘> 작사 잭머피
+                    최고의 실력을 자랑하는 국내 최고 음악감독 김문정
+            </a> 
+        </div>  
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"  style="width: 700px;"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri">
+            <p>#Chapter 3</p>
+            <p class="p">완벽에 완벽을 더한 무대를 만날 수 있는 단 3주간의 기회!</p>
+            <a>
+                    다시 없을 초호화 캐스팅!
+                    한국 배우 최초로 웨스트엔드 무대 진출, 세계가 인정한 최고의 배우 홍광호
+                    매 작품 대체 불가능한 캐릭터를 창조하는, 뮤지컬계 뜨거운 스포트라이트의 주인공 김준수
+                    폭발적인 가창력의 소유자, 뮤지컬계 대표 여배우 정선아
+                    <위키드>를 통해 뮤지컬계 새로운 헤로인으로 떠오른 배우 박혜나
+                    2015년 가장 핫한라이징 스타 강홍석
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4" style="width: 700px;"> 
+    <div id="note_container" class="note_container" >
+        <div class="note_ri">
+            <p>#Chapter 4</p>
+        <p class="p">50벌의 주문 제작, 고전미 넘치는 특별한 의상이 주는 아름다움</p>
+        <a>
+                모든 것이 완벽하다!
+                원작의 매력을 살린 치밀하고 스릴 넘치는 스토리
+                천재 대학생 라이토와 세계적인 명탐정 엘(L)의 치열한 심리전
+                긴장감을 고조시킬 짜릿하고 진한 울림의 음악
+                스토리와 음악, 눈앞에서 펼쳐지는 생생한 배우들의 열연을 더해
+                2015년 최고의 뮤지컬 무대를 선사한다!
+        </a>        
+        </div>
+    </div> 
+</div>
+
+<!-------제작노트 끝------->
+</div>
+
+
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈데스노트〉 무대스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="http://image.yes24.com/images/chyes24/1/9/9/b/199b25269105af05e19b69eb081b3e38.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://image.kmib.co.kr/online_image/2015/0416/201504160344_11110923039287_1.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://static.news.zumst.com/images/91/2015/06/26/691d98e232a7444b949daa3358504edc.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://img.etnews.com/news/article/2017/01/04/article_04111723915385.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="https://i.ytimg.com/vi/djt3kfUNtxM/maxresdefault.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈데스노트〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+    
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X3594BKu--Q" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U7pt9K5878o" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rrI7tOhoVzA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+<section class="separator">
+        <a>〈데스노트〉 작품설명 </a>
+    </section>
+<div id="review_bottom" style="display: table; vertical-align: middle;text-align: center; margin: 0 auto;">
+    <img src="http://ticketimage.interpark.com/Play/image/etc/15/15004990-05.jpg">
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>

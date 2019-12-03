@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>뮤지컬 리뷰 웹사이트 | KoMoo</title>
+<link href="css/reviewmain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/hover-min.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+ <!-- 주의할점!! 맨위에 스타일시트에서 곂친부분은 맨마지막에 쓰여진 스타일시트에 덮혀진다 -->
+    <!-- review 슬라이드 -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- 메인 스타일시트 -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/review.css">
+
+<script src="./js/main.js"></script>
+<script src="./js/review.js"></script>
+<!--icon 무료사이트-->
+<link rel="stylesheet" href="./css/menu_style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--홈페이지 아이콘-->
+<link rel="shortcut icon" href="./img/mainicon.png">
+
+</head>
+<!---------------------------------------- header 시작 ---------------------------------------->
+<header class="page-header" role="banner"  selector="1">
+    <div class="menu-top">
+       <div class="site-logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="menu-top-left">
+            <div>
+                 <div class="wrapper">
+                    <input type="checkbox" id="open_menu">
+                    <label for="open_menu" class="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <nav>
+                    <div class="menu_item">
+                        <a href="./index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./board.html">
+                        <i class="fa fa-book"></i>
+                        <span>Review</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="./University.html">
+                        <i class="fa fa-university"></i>
+                        <span>University</span>
+                        </a>
+                    </div>
+
+                    <div class="menu_item">
+                        <a href="History.html">
+                        <i class="fa fa-history"></i>
+                        <span>History</span>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menu-top-right">
+                <div class="active-hidden">
+                    <a href="index.html">KoMoo review</a>
+                    <ul>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-globe-americas"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+<!---------------------------------------- body 시작 ---------------------------------------->
+<body>
+    
+<!----------- slideshow 시작 ----------->
+<div class="slideshow">
+    <div class="slideshow_slides"> <!-- 바깥 -->
+        <a href="#" class="slide" style="left: 0%;"><img src="img/main.png" alt="slide1"></a>
+        <a href="#" class="slide" style="left: 100%;"><img src="img/main2.png" alt="slide2"></a>
+        <a href="#" class="slide" style="left: 200%;"><img src="img/main3.png" alt="slide3"></a>
+        <a href="#" class="slide" style="left: 300%;"><img src="img/main4.png" alt="slide4"></a>
+    </div><!-- slideshow_slidd 끝 --> 
+
+    <div class="slideshow_nav">
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
+    </div><!-- slideshow_nav 끝 -->
+    <div class="indicator">
+    <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    -->
+    </div><!-- indicator끝 -->
+</div>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+ </label>
+    <div class="sidebar">
+        <ul class="sidebaricon">
+            <li><img src="img/mainicon.png" width="120px" height="120px"></li>
+        </ul>
+        <ul class="sidebarmenu">
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_maun">주요정보</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_Actor">출연배우진</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#tab_note">제작노트</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#Stillcut">스틸이미지</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#video_content">메인예고편</a></li>
+            <li><i class="fas fa-angle-right"></i>  <a href="#review_bottom">명대사 & OST</a></li>
+
+        </ul>
+    </div>
+</label>
+<!----------- slideshow 끝 ----------->
+<section class="separator">
+        <div class="line"></div>
+        뮤지컬영화 정보
+    </section>
+<div class="review_maun" id="review_maun"
+    style="background:url('http://image.cine21.com/cine21/still/2016/1107/48220_58202c44c4364_still_08.jpg')"> 
+<div class="review_cover" >
+    <div class="review_top">
+        <div class="reivew_poster">
+            <img src="img1\mo\mo5.jpg" width="240px" height="340px">
+        </div>
+        <div class="review_in">
+            <h1 class="">미녀와야수</h1>
+            <span class="review_in_h1">Beauty and the Beast</span>
+            <p><span>2017</span>  
+               <span>미국</span>  
+               <a class="review_in_ni">전체관람가</a>
+            </p>
+            <p><span>판타지, 뮤지컬, 멜로·로맨스</span><span>상영시간 : 129분</span></p>
+            <p>개봉일 : 2014-01-16</p>
+            <p>감독 : 빌 콘돈</p>
+            <p>주연배우 : 엠마 왓슨(벨) 댄 스티븐스(야수/왕자)</p>
+        </div>
+        <ul class="mov_rating">	
+            <li>감독<span class="review_top2_top">
+                <img src="img1\mu\Actor2\Beauty7.jpg">
+                빌 콘돈</span></li>
+            <li>기자 · 평론가 평점<span class="score">7.00</span></li>
+            <li>네티즌<span class="score">7.36</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!----리뷰메인베너 끝------->
+
+
+
+<!----출연배우진 시작------->
+<div class="review_Actor" id="review_Actor">
+    <div class="review_Actor_title"><h4>〈미녀와야수〉<span> 영화 출연배우진</span></h4></div>
+    <table class="Actior">
+        <thead id="main_Actior">
+        <caption>대표 출연배우</caption>
+            <th id="img"><img src="img1\mu\Actor2\Beauty1.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Beauty2.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Beauty3.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Beauty4.jpg"></th>
+            <th id="img"><img src="img1\mu\Actor2\Beauty5.jpg" ></th>
+            <th id="img"><img src="img1\mu\Actor2\Beauty6.jpg"></th>
+        </thead>
+        <tbody id="main_Actior">
+            <td>엠마 왓슨</td>
+            <td>댄 스티븐스</td>
+            <td>루크 에반스</td>
+            <td>조시게드</td>
+            <td>이완 맥그리거</td>
+            <td>이안 맥켈런</td>
+        </tbody>
+        <tfoot id="main_Actior">
+            <th>벨 역</th>
+            <th>야수/왕자 역</th>
+            <th>개스톤 역</th>
+            <th>루프 역</th>
+            <th>촛대 르미에 역</th>
+            <th>시계 콕스워스 역</th>
+        </tfoot>
+    </table>
+</div>
+</div>
+<!----출연배우진 끝--------->
+
+
+
+
+<!-----------------------------------제작노트----------------------------------->
+<div class="tab_note" id="tab_note">
+        <section class="separator">
+                <a>〈미녀와야수〉 제작노트</a>
+            </section>
+    <input type="radio" name="tabmenu" id="note01" checked>
+    <label for="note01">ABOUT MOVIE 1</label>
+
+    <input type="radio" name="tabmenu" id="note02">
+    <label for="note02">ABOUT MOVIE 2</label>
+
+    <input type="radio" name="tabmenu" id="note03">
+    <label for="note03">ABOUT MOVIE 3</label>
+
+    <input type="radio" name="tabmenu" id="note04">
+    <label for="note04">ABOUT MOVIE 4</label>
+
+<!--******************************** 첫번째 박스 시작 ********************************-->    
+<div class="notebox note1"> 
+    <div id="note_container"  class="note_container">
+        <div class="note_ri"><p>제작기 첫번째</p>
+            <p>전설적인 애니메이션 ‘미녀와 야수’(1991, 게리 트러스데일·커크 와이즈 감독)가 실사 버전으로 돌아온다.</p>
+        <p class="p">애니메이션으로는 처음으로 아카데미 시상식 작품상 후보에 올랐던 작품</p>
+            <a>월트 디즈니 컴퍼니(이하 디즈니) 애니메이션 ‘미녀와 야수’가 제작된 지 26년 만에 실사 뮤지컬영화로 다시 태어난다. ‘미녀와 야수’ 실사 프로젝트의 가능성을 확신하지 못했던 디즈니는, ‘겨울왕국’(2013, 크리스 벅·제니퍼 리 감독)의 성공이 계기가 되어 본격적으로 제작에 돌입했다. 뮤지컬 장르의 가치를 다시 본 것이다. 
+            후반 작업이 한창이던 시기에는 ‘라라랜드’(2016, 데이미언 셔젤 감독)가 개봉해 할리우드 뮤지컬 귀환의 신호탄 역할을 했다. 어느새 ‘말레피센트’(2014, 로버트 스트롬버그 감독) ‘정글북’(2016, 존 파브로 감독) 등 고전 동화를 21세기 스크린에 불러내는 것이 유행처럼 번진 상태. 그러나 ‘미녀와 야수’를 연출한 콘돈 감독은, 이런 트렌드보다 뮤지컬 장르에 대한 열망이 더 컸다. “사람들이 뮤지컬 장르에 다시 익숙해지고 있다. ‘미녀와 야수’뿐 아니라 ‘라이온 킹’(1994, 로저 알러스·롭 민코프 감독) ‘인어공주’(1989, 론 클레멘츠·존 머스커 감독)도 실사로 만들어질 예정인데 정말 흥분된다. 이런 영화들이 계속 제작되는 걸 보면, 1950년대 대규모 뮤지컬이 만들어졌던 시대가 귀환하는 것 같다.” ‘드림걸즈’(2006)로 이미 뮤지컬 장르에 대한 애정을 표현했던 콘돈 감독. 그는 ‘미녀와 야수’를 통해 할리우드 뮤지컬의 현대적 재창조에 앞장선다. 압도적인 규모를 생생하게 담아내기 위해 사운드 좋기로 유명한 영국 런던 셰퍼튼 스튜디오에 마을과 야수의 성 세트를 지었다. 가급적 CG(컴퓨터 그래픽) 배경을 배제하고, 세트에서 거의 모든 장면을 촬영했다. 
+            </a>  
+        </div>
+    </div>
+</div>
+<!--******************************** 두번째 박스 시작 ********************************-->    
+<div class="notebox note2"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>제작기 두번째</p>
+            <p class="p">스크린에 되살아난 ‘싱크로율 100%’ 캐릭터 </p>
+            <a>실사화 과정을 거치며 각각의 캐릭터도 한층 복잡해졌다. 특히 벨 캐릭터의 진화가 두드러진다. 원작 ‘미녀와 야수’의 벨(페이지 오하라·목소리 출연) 캐릭터를 굉장히 좋아하는 엠마 왓슨은, 기예르모 델 토로 감독과 준비하던 다른 버전이 엎어졌을 때도 주연 배우로서 흔들리지 않았다. 델 토로 감독 하차 후 콘돈 감독과 손잡은 그는, ‘월플라워’(2012)의 스티븐 크보스키 감독과 ‘헌츠맨:윈터스 워’(2016, 세딕 니콜라스 트로얀 감독)의 에반 스필리오토풀로스 작가와 함께 시나리오 각색 워크숍에 들어갔다. 완성된 시나리오에서 벨은 발명가인 아버지(케빈 클라인)와 협력해 발명에 나서는 과학 소녀다. 벨은 세탁기를 발명해 빨래 시간을 줄이고, 그 시간에 책을 읽는다. 그런 소녀가 과학이 아닌 마법이 지배하는 성에 갇혔으니, 그 문화적 충격에 따른 일화들이 튀어나오지 않을까. 
+            </a>
+        </div>
+    </div>
+</div>
+<!--******************************** 세번째 박스 시작 ********************************-->
+<div class="notebox note3"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>제작기 세번째</p>
+            <p>26년이 흘러도 음악은 여전히 레전드</p>
+            <p class="p">1992년 제64회 아카데미 시상식 주제가상을 받은 ‘뷰티 앤 더 비스트(Beauty and the Beast)</p>
+            ‘미녀와 야수’의 또 다른 주인공은 음악이다. 1992년 제64회 아카데미 시상식 주제가상을 받은 ‘뷰티 앤 더 비스트(Beauty and the Beast)’를 비롯해, 원작의 모든 곡들이 실사 버전에 그대로 이식된다. 새롭게 등장하는 음악은 세 곡이다. 원작에 이어 실사영화에도 참여한 작곡가 알란 멘켄. 그는 작사가 팀 라이스와 호흡을 맞추는 한편, 작고한 작사가 하워드 애시먼이 1991년 당시 ‘미녀와 야수’를 위해 써 놨던 노랫말을 발견해 이번 영화에 추가했다. 야수가 홀로 부르는 감동의 발라드 ‘포 이븐모어(For Evenmore)’, 가정용품 조연들이 인간 시절을 추억하며 부르는 자장가 같은 곡 ‘데이즈 인 더 선(Days in the Sun)’이 이야기를 더욱 풍부하게 할 예정이다. 
+            1991년 셀린 디온과 피보 브라이슨이 함께 부른 주제곡 ‘뷰티 앤 더 비스트’는, 2017년 아리아나 그란데와 존 레전드의 듀엣으로 재탄생한다. 셀린 디온은 이번 영화에 신곡 ‘하우 더스 어 모멘트 라스트 포에버(How Does a Moment Last Forever)’로 참여하게 됐다. 콘돈 감독은 음악이 흘러나오는 장면을 영화적으로 스펙터클하게 보여 주는 데 최선의 노력을 기울였다. “접시와 촛불이 노래하고 춤추는 ‘비 아워 게스트(Be our Guest)’ 장면을 3D 버전으로 보고 있으면, 어린 시절 디즈니 영화를 보며 느꼈던 감정이 떠오른다. 저 장면을 대체 어떻게 만들어 냈을까 궁금해 하던 바로 그 감정 말이다. 이처럼 실사 버전에서는 캐릭터들이 노래하고 춤추는 장면을 3D로 만날 수 있다. ‘와우!’ 하며 놀라는, 새로운 ‘미녀와 야수’를 경험하게 될 것이다.”
+            </a>    
+        </div>
+    </div>
+</div>
+
+<!--******************************** 네번째 박스 시작 ********************************-->
+<div class="notebox note4"> 
+    <div id="note_container" class="note_container">
+        <div class="note_ri"><p>제작기 네번째</p>
+        <p class="p">노래까지 잘하는 명품조연들</p>
+        <a>2017년 ‘미녀와 야수’에서도 명배우들이 조연 캐릭터의 목소리 연기를 맡았다. 연기력은 걱정할 필요 없이 다들 출중하지만, 과연 원작의 주옥같은 노래를 제대로 소화할 수 있을까? 이 배우들이 노래하는 영상을 유튜브에서 검색해 보면, 이런 염려는 말끔히 사라진다. 먼저 찻주전자 미세스 팟 역의 엠마 톰슨. 2014년 뉴욕에서 공연한 뮤지컬 ‘스위니 토드’ 영상 클립을 보면, 톰슨이 2007년 영화 버전의 헬레나 본햄 카터 못지않게 감칠맛 나는 노래 실력을 지녔다는 걸 확인할 수 있다. 
+        ‘반지의 제왕’ 3부작(2001~2003, 피터 잭슨 감독)의 간달프로 유명한, 괘종시계 콕스워스 역의 이안 맥켈런은 어떠냐고? 2014년 영국 가수 조지 이즈라가 발표한 ‘리슨 투 더 맨(Listen to the Man)’ 뮤직비디오를 찾아보자. 멋진 중절모를 쓴 맥켈런이 중후한 목소리로 노래하는 모습에 흠뻑 빠질 테니. 야수의 연적 개스톤을 연기한 루크 에반스도 꽤 터프한 보이스를 가졌다. 
+        지난해 영국의 TV 토크 쇼 ‘조너선 로스 쇼’(2011~, BBC One)에 휴 잭맨, 태런 에거튼과 함께 출연해 개스톤의 테마곡 ‘개스톤(Gaston)’을 부르기도 했다. 촛대 르미에 역의 이완 맥그리거? 더 말할 나위도 없다. 뮤지컬영화 ‘물랑루즈’(2001, 바즈 루어만 감독)를 보라. 듣는 이의 귀와 가슴을 ‘뚫어뻥’처럼 틔워 주는 시원한 미성을 이미 증명한 지 오래.
+        </a>   
+    </div> 
+</div>
+<!-------제작노트 끝------->
+</div>
+
+
+
+<!--------------- 스틸컷 ---------------->
+<section class="separator">
+        <a>〈미녀와야수〉 스틸컷</a>
+    </section>
+    
+<div class="carousel" id="Stillcut" >    
+    <div class="carousel-item">
+        <img src="https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/rsF/image/I8Kr7hndAP-go4zmn3vkbczlbQY">
+    </div>
+    <div class="carousel-item">
+        <img src="http://file3.instiz.net/data/file3/2018/03/14/d/d/1/dd17e1329dc8c6874f0b11f764c33251.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://file3.instiz.net/data/file3/2018/03/14/d/b/9/db94c57ca420ea4e147b6886149fc0be.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://file3.instiz.net/data/file3/2018/03/14/f/a/a/faac16279c5f9e6bc35ccfccd00071b2.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="http://file3.instiz.net/data/file3/2018/03/14/b/b/9/bb9f94d4af1a471c0074cb8c23b9933a.jpg">
+    </div> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+    </script>
+</div>    
+<!--------------- 스틸컷 끝---------------->
+
+
+
+<!---------------동영상 슬라이드-------------->
+<div class="tab_content" id="video_content">
+        <section class="separator">
+                <a> 〈미녀와야수〉 영상</a>
+            </section>
+        <input type="radio" name="tabmovi" id="tab01" checked>
+        <input type="radio" name="tabmovi" id="tab02">
+        <input type="radio" name="tabmovi" id="tab03">
+  
+        <div class="conbox con1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gjVW0qU0qCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pD2s8VTLXGE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="conbox con3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/n7LZA4Er7_g" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="btn">
+            <label for="tab01"></label>
+            <label for="tab02"></label>
+            <label for="tab03"></label>
+        </div>
+</div>
+<!---------------동영상 슬라이드 끝-------------->
+<section class="separator">
+        <a>〈미녀와야수〉 명대사</a>
+    </section>
+    <div class="review_Best" id="review_bottom" style="background:url('http://image.cine21.com/cine21/still/2016/1107/48220_58202c44c4364_still_08.jpg')center">
+        <div class="review_Best_R">
+    <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"시계로 변해야 돼.. 시계로 변해야 돼.."</p>
+            <p>시계 콕스워스</p>
+        <img src="img/note2.png">
+    </div><hr>
+     <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"누군가를 사랑하려면 너 자신을 먼저 사랑해.</p>
+            <p>벨</p>
+        <img src="img/note2.png">
+    </div><hr>
+     <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"희망은 우리가 받은 가장 위대한 선물이에요."</p>
+            <p>야수/왕자</p>
+        <img src="img/note2.png">
+    </div><hr>
+    <div class="review_Best1">
+        <img src="img/note1.png">
+            <p>"저도 함께 일해서 영광이었습니다."</p>
+            <p>촛대 르미에</p>
+        <img src="img/note2.png">
+    </div>
+    </div>
+</div>
+<!--리뷰창-->
+<!---------------------------------------- footer 시작 ------------------------------------------>
+<footer>
+    <div class="rogo">
+        <a href="./index.html" class="logo2"><img src="img/logo.png" alt="logo"></a>
+        <a>© 2019년 2차 창작물로 제작된 본 홈페이지에 대한 모든 권리는 코무컴퍼니(사업체명)에 귀속됩니다.</a>
+        <a href="http://www.cnsu.ac.kr/entr.do" class="logo2"><img src="img/logo2.png" alt="logo"></a>
+    </div>
+        <div class="icon">
+            <div class="snst">
+                <a href="https://www.instagram.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst01.png" alt=""></a>
+                <a href="https://www.facebook.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst02.png" alt=""></a>
+                <a href="https://www.youtube.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst03.png" alt=""></a>
+                <a href="https://www.naver.com" onclick="window.open(this.href, 'target', ''); return false;"><img src="http://www.musicalelisabeth.com/theme/elisabeth/img/global/btn_snst04.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+<!---------------------------------------- aroow 버튼 시작 ------------------------------------------>
+<a href="" class="go_top">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+</body>
+</html>
